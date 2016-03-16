@@ -50,8 +50,8 @@ module.exports = function(grunt) {
 		      port:21,
 		      authKey:
 		      {
-		      	"username": "u317388967",
-    			"password": "gfgfkjd10"}
+		      	"username": "",
+    			"password": ""}
 		      },
 		    src: '',
 		    dest: 'public_html/dolhi',
@@ -94,11 +94,11 @@ module.exports = function(grunt) {
 			    options: {
 			        spawn: false,
 			    }
-			},
-			ftpush: {
-				files: ['**/*','!**/node_modules/**'],
-				tasks: ['ftpush']
-			}
+			}//,
+			//ftpush: {
+			//	files: ['**/*','!**/node_modules/**'],
+			//	tasks: ['ftpush']
+			//}
 		}
 
     });
