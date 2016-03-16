@@ -289,6 +289,12 @@ header {
 .proc_fon:hover .ramka_h {}
 .proc_fon:hover .anti_h {}
 .stat { width: 300px; float: left;/* padding-top: 21px; */}
+.stat.fix-stat {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    margin-left: -585px;
+}
 .sec3 { height: 1100px; background: url("../img/bg_sec3.jpg") 50% 0% no-repeat; }
 .kto { font-family: 'Noto Serif'; font-size: 19px; font-style: italic; line-height: 26px; text-align: left; font-weight: 400; margin-top: 43px; margin-left: 69px; letter-spacing: 0.3px; margin-bottom: 32px;}
 .kto_t { color: white; font-family: MuseoSansCyrl; font-size: 22px; line-height: 27px; font-weight: 400;/* width: 318px; */ height: 74px; display: block; margin-left: -4px; text-align: left; padding-left: 77px; letter-spacing: 0.4px; margin-bottom: -1px;}
@@ -617,8 +623,14 @@ header {position: absolute;top: 25px;width: 100%;text-align: center;z-index: 5;}
 .proc_fon:hover .anti_h {
     opacity: 0;
 }
+.stat.stat-abs.stat-show{
+    display: block;
+}
+.stat.stat-abs{
+    display: none;
+}
 .stat { width: 302px; float: left;padding-top: 76px;position: relative;z-index: 4;}
-.sec3 {height: 1325px;background: url("../img/bg_sec3.jpg") 50% 50% no-repeat;}
+.sec3 {height: 1325px;background: url("../img/bg_sec3.jpg") 50% 50% no-repeat;z-index: 3;}
 .sec3 .middle-wrap{
     padding-left: 302px;
 }
@@ -632,10 +644,21 @@ header {position: absolute;top: 25px;width: 100%;text-align: center;z-index: 5;}
 .kto_arb:hover,.kto_arb.active { color: rgb(249, 168, 89); font-weight: 700;background: url("../img/arb_imh.png") 25px 22px no-repeat, url("../img/kto_im.png") 50% 0% no-repeat;}
 .dinam { float: left; padding-left: 64px;/* padding-top: 50px; */ width: 868px;}
 .dinam.st2,.dinam.st3{display:none;}
-.sec3 .dinam{
+.sec3 .dinam,.se3_f_n .dinam{
     position: absolute;
     top: 0;
     left: 302px;
+}
+.se3_f_n .dinam[data-block="1"]{
+    padding-top: 47px;
+}
+.se3_f_n .dinam[data-block="3"]{
+    padding-top: 47px;
+    display: none;
+}
+.se3_f_n .dinam[data-block="2"]{
+    padding-top: 121px;
+    display: none;
 }
 .vre { color: rgb(36, 37, 41); font-family: MuseoSansCyrl; font-size: 42px; line-height: 41px; font-weight: 700; text-align: left; letter-spacing: 0.3px; background: url("../img/titl_din.png") 0% 100% no-repeat; }
 .osv {
@@ -671,7 +694,7 @@ header {position: absolute;top: 25px;width: 100%;text-align: center;z-index: 5;}
 .izb_im2 {padding-top: 60px; margin-left: 75px; float: left; margin-top: 11px; background: url("../img/izb_im2.png") 1px 0px no-repeat;}
 .izb_im3 {padding-top: 60px; margin-left: 66px; float: left; margin-top: 11px; padding-left: 7px; background: url("../img/izb_im3.png") 0px 0px no-repeat;}
 .st2 .komp {margin-top: 250px; margin-left: 0px;margin-bottom: 30px;}
-.voz_t { color: black; font-family: 'Noto Serif'; font-size: 19px; font-weight: 400; line-height: 22px; text-align: left; letter-spacing: 0.8px; padding-bottom: 6px;margin-bottom: 70px; margin-left: 5px; padding-left: 73px; background: url("../img/shchit_im.png") 0px 4px no-repeat;}
+.voz_t {color: black;font-family: 'Noto Serif';font-size: 19px;font-weight: 400;line-height: 22px;text-align: left;letter-spacing: 0.8px;padding-bottom: 6px;margin-bottom: 70px;margin-left: 5px;padding-left: 73px;background: url("../img/shchit_im.png") 0px 4px no-repeat;margin-top: 76px;}
 .arbit { color: rgb(36, 37, 41); font-family: MuseoSansCyrl; font-size: 21px; line-height: 22px; text-align: left; padding-bottom: 47px; margin-left: 3px; letter-spacing: 0.7px; background: url("../img/arbit_tit.png") 1px 100% no-repeat; }
 .st3 .vre { padding-bottom: 34px; }
 .st3 .osv {margin-top: 10px; letter-spacing: 1.3px;padding-bottom: 10px;}

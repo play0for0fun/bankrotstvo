@@ -5,7 +5,7 @@
     <title>BING</title>
     <meta id="viewport" name="viewport" content="width=1200">
     <style>#loader:after,#loader:before{content:"";position:absolute;height:initial;width:initial}#loader-wrapper{position:fixed;top:0;left:0;width:100%;height:100%;z-index:1000}#loader{display:block;position:relative;left:50%;top:50%;width:150px;height:150px;margin:-75px 0 0 -75px;border-radius:50%;border:3px solid transparent;border-top-color:#3498db;-webkit-animation:spin 2s linear infinite;animation:spin 2s linear infinite;z-index:1001}#loader:before{top:5px;left:5px;right:5px;bottom:5px;border-radius:50%;border:3px solid transparent;border-top-color:#e74c3c;-webkit-animation:spin 3s linear infinite;animation:spin 3s linear infinite}#loader:after{top:15px;left:15px;right:15px;bottom:15px;border-radius:50%;border:3px solid transparent;border-top-color:#f9c922;-webkit-animation:spin 1.5s linear infinite;animation:spin 1.5s linear infinite}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes spin{0%{-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}}#loader-wrapper .loader-section{position:fixed;top:0;width:51%;height:100%;background:#222;z-index:1000;-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}#loader-wrapper .loader-section.section-left{left:0}#loader-wrapper .loader-section.section-right{right:0}.loaded #loader-wrapper .loader-section.section-left{-webkit-transform:translateX(-100%);-ms-transform:translateX(-100%);transform:translateX(-100%);-webkit-transition:all .7s .3s cubic-bezier(.645,.045,.355,1);transition:all .7s .3s cubic-bezier(.645,.045,.355,1)}.loaded #loader-wrapper .loader-section.section-right{-webkit-transform:translateX(100%);-ms-transform:translateX(100%);transform:translateX(100%);-webkit-transition:all .7s .3s cubic-bezier(.645,.045,.355,1);transition:all .7s .3s cubic-bezier(.645,.045,.355,1)}.loaded #loader{opacity:0;-webkit-transition:all .3s ease-out;transition:all .3s ease-out}.loaded #loader-wrapper{visibility:hidden;-webkit-transform:translateY(-100%);-ms-transform:translateY(-100%);transform:translateY(-100%);-webkit-transition:all .3s 1s ease-out;transition:all .3s 1s ease-out}.no-js #loader-wrapper{display:none}.no-js h1{color:#222}#content{margin:0 auto;padding-bottom:50px;width:80%;max-width:978px}</style>
-    <link rel="stylesheet" href="css/libs.css">
+    <link rel="stylesheet" href="css/libs_old.css">
     <link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700,700italic&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
@@ -235,12 +235,6 @@
                         <br>который искусственно
                         <br>затягивает процедуру</p>
                     <div class="clear"></div>
-                    <h4 class="komp">Мы контролируем <br>процедуру банкротства</h4>
-                    <p class="voz_t">Возможность назначения подконтрольного
-                        <br>арбитражного управляющего</p>
-                    <p class="arbit">Арбитражный управляющий принимает управление имуществом
-                        <br>должника в свое ведение на период процедуры банкротства до
-                        <br>момента полного возврата задолженности кредитору.</p>
                 </div>
                 <div class="dinam st3" id="arbitrazh" data-block="3">
                     <h3 class="vre">Сохраните кристально чистую <br>репутацию перед заказчиком!</h3>
@@ -267,37 +261,14 @@
                         <br>решением собрания
                         <br>кредиторов</p>
                     <div class="clear"></div>
-                    <h4 class="komp">Мы ищем новых партнеров <br>и готовы делиться своим опытом!</h4>
-                    <p class="komp_t kom1">Анализ признаков
-                        <br>фиктивного
-                        <br>и преднамеренного
-                        <br>банкроства</p>
-                    <p class="komp_t kom2">Привлечение к
-                        <br>субсидиарной
-                        <br>ответственности должника</p>
-                    <div class="clear"></div>
-                    <p class="komp_t kom1">Получение новых заказов при
-                        <br>удачной совместной работе</p>
-                    <p class="komp_t kom2">Бухгалтерское
-                        <br>сопровождение
-                        <br>в процедуре банкротства</p>
                 </div>
             </div>
         </div>
     </section>
      <section class="se3_f_n section" id="sec4">
         <div class="wrap">
-        <div class="stat">
-                <p class="kto">В качестве кого вы
-                    <br> выступаете в
-                    <br> процедуре
-                    <br> банкротства</p>
-                <a href="" class="kto_t kto_dol active" data-block="1">Должник</a>
-                <a href="" class="kto_t kto_kre" data-block="2">Кредитор</a>
-                <a href="" class="kto_t kto_arb" data-block="3"> Арбитражный<br>управляющий</a>
-            </div>
             <div class="middle-wrap">
-                <div class="dinam">
+                <div class="dinam" data-block="1">
                     <div class="clear"></div>
                     <h4 class="komp">Наша компания решает <br>задачи любой сложности</h4>
                     <p class="komp_t kom1">Исключение из Гос Реестра
@@ -318,13 +289,37 @@
                         <br>арбитражного
                         <br>управляющего</p>
                 </div>
+                <div class="dinam" data-block="2">
+                    <h4 class="komp">Мы контролируем <br>процедуру банкротства</h4>
+                    <p class="voz_t">Возможность назначения подконтрольного
+                        <br>арбитражного управляющего</p>
+                    <p class="arbit">Арбитражный управляющий принимает управление имуществом
+                        <br>должника в свое ведение на период процедуры банкротства до
+                        <br>момента полного возврата задолженности кредитору.</p>
+                </div>
+                <div class="dinam" data-block="3">
+                    <h4 class="komp">Мы ищем новых партнеров <br>и готовы делиться своим опытом!</h4>
+                    <p class="komp_t kom1">Анализ признаков
+                        <br>фиктивного
+                        <br>и преднамеренного
+                        <br>банкроства</p>
+                    <p class="komp_t kom2">Привлечение к
+                        <br>субсидиарной
+                        <br>ответственности должника</p>
+                    <div class="clear"></div>
+                    <p class="komp_t kom1">Получение новых заказов при
+                        <br>удачной совместной работе</p>
+                    <p class="komp_t kom2">Бухгалтерское
+                        <br>сопровождение
+                        <br>в процедуре банкротства</p>
+                </div>
             </div>
         </div>
     </section>
     <section class="se3_f section" id="sec5">
         <div class="se3_f_plaw"></div>
         <div class="wrap">
-        <div class="stat">
+        <div class="stat stat-abs">
                 <p class="kto">В качестве кого вы
                     <br> выступаете в
                     <br> процедуре

@@ -1,0 +1,24 @@
+cd ../../Volumes/Workspace/CACHE/GITHUB/bankrotstvo
+
+sudo npm install grunt --save-dev
+
+
+npm install grunt --save-dev
+npm install time-grunt --save
+npm install load-grunt-config --save-dev
+npm install grunt-concurrent --save-dev
+npm install grunt-contrib-clean --save-dev
+npm install grunt-contrib-imagemin --save-dev
+npm install grunt-sass --save-dev
+npm install grunt-contrib-uglify --save-dev
+npm install grunt-contrib-jshint --save-dev
+npm install jshint-stylish --save
+npm install grunt-contrib-watch --save-dev
+npm install grunt-contrib-concat --save-dev
+npm install grunt-contrib-cssmin --save-dev
+npm install grunt-contrib-watch --save-dev
+npm install grunt-autoprefixer --save-dev
+npm install grunt-reload --save-dev
+npm install grunt-browser-sync --save-dev
+npm install grunt-ftpush --save-dev
+grunt

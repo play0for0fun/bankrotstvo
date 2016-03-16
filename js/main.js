@@ -7,6 +7,8 @@ $(document).ready(function(){
     $('<style>section,.section{height:800px;display:block}.animation,.animation2,.animation3{opacity:1}</style>').appendTo('head');
   }
 
+      console.log('ftp-push');
+      
   $('#zz-btn').click(function(e) {
     e.preventDefault();
     $('#zz_pop').arcticmodal();
@@ -74,6 +76,7 @@ $(document).ready(function(){
       $('.dinam[data-block="'+$(this).data('block')+'"]').fadeIn();
       $('.kto_t.active').removeClass('active');
       $(this).addClass('active');
+      console.log('ftp-push');
     }
   });
 
@@ -224,11 +227,14 @@ function initfullpage(){
             $(this).find('.animation3').addClass('fadeIn animated');
             if ($(this).hasClass('sec4')|| $(this).hasClass('sec6')) {$('.fixed-menu-logo').addClass('blacked')}else{$('.fixed-menu-logo').removeClass('blacked')}
             if (!$(this).hasClass('sec1')&&!$('#fp-nav').hasClass('animated')) {$('#fp-nav').addClass('fadeIn animated')}
+            if(index == 3 || index == 4 || index == 5){$('.stat').not('.stat-abs').addClass('fix-stat');$('.stat-abs').removeClass('stat-show');}else{$('.stat').not('.stat-abs').removeClass('fix-stat')}
           },
       onLeave: function(index, nextIndex, direction){
             $('.section:nth-child('+nextIndex+')').find('.animation').addClass('fadeInUp animated');
             $('.section:nth-child('+nextIndex+')').find('.animation2').addClass('fadeInDown animated');
             $('.section:nth-child('+nextIndex+')').find('.animation3').addClass('fadeIn animated');
+            if (nextIndex == 2 && direction == "up") {$('.stat').not('.stat-abs').removeClass('fix-stat');}
+            if (nextIndex == 6 && direction == "down") {$('.stat').not('.stat-abs').removeClass('fix-stat');$('.stat-abs').addClass('stat-show');}
             //if (direction=='down'&&$(this).next().hasClass('sec4')|| direction=='down'&&$(this).next().hasClass('sec6')||direction=='up'&&$(this).prev().hasClass('sec4')|| direction=='up'&&$(this).prev().hasClass('sec6')) {$('.fixed-menu-logo').addClass('blacked')}else{$('.fixed-menu-logo').removeClass('blacked')}
           },
       afterRender: function(){
