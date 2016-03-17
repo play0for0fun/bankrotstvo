@@ -215,6 +215,10 @@ $(window).load(function(){
 });
 $(window).scroll(function() {
   hfixed();
+  block2();
+});
+$('.scrolled-wrap').scroll(function() {
+  block2();
 });
 function initfullpage(){
    $('#pages').fullpage({
@@ -227,14 +231,45 @@ function initfullpage(){
             $(this).find('.animation3').addClass('fadeIn animated');
             if ($(this).hasClass('sec4')|| $(this).hasClass('sec6')) {$('.fixed-menu-logo').addClass('blacked')}else{$('.fixed-menu-logo').removeClass('blacked')}
             if (!$(this).hasClass('sec1')&&!$('#fp-nav').hasClass('animated')) {$('#fp-nav').addClass('fadeIn animated')}
-            if(index == 3 || index == 4 || index == 5){$('.stat').not('.stat-abs').addClass('fix-stat');$('.stat-abs').removeClass('stat-show');}else{$('.stat').not('.stat-abs').removeClass('fix-stat')}
+            if(index == 3){
+              
+              $.fn.fullpage.setMouseWheelScrolling(false);
+              $.fn.fullpage.setAllowScrolling(false);
+              $('.stat').not('.stat-abs').addClass('fix-stat');
+              $('body').removeClass('fp-viewing-0').addClass('fp-viewing-0');
+              //$('body').css('overflow','hidden');
+              //$('.stat-abs').removeClass('stat-show');
+            }else{
+              $('.stat').not('.stat-abs').removeClass('fix-stat');
+              $.fn.fullpage.setMouseWheelScrolling(true);
+              $.fn.fullpage.setAllowScrolling(true);
+              //$('.stat').not('.stat-abs').removeClass('fix-stat')
+            }
+            //if(index == 2){$.fn.fullpage.setMouseWheelScrolling(true);$.fn.fullpage.setAllowScrolling(true);}
+            //if(index == 4){$.fn.fullpage.setMouseWheelScrolling(true);$.fn.fullpage.setAllowScrolling(true);}
           },
       onLeave: function(index, nextIndex, direction){
             $('.section:nth-child('+nextIndex+')').find('.animation').addClass('fadeInUp animated');
             $('.section:nth-child('+nextIndex+')').find('.animation2').addClass('fadeInDown animated');
             $('.section:nth-child('+nextIndex+')').find('.animation3').addClass('fadeIn animated');
-            if (nextIndex == 2 && direction == "up") {$('.stat').not('.stat-abs').removeClass('fix-stat');}
-            if (nextIndex == 6 && direction == "down") {$('.stat').not('.stat-abs').removeClass('fix-stat');$('.stat-abs').addClass('stat-show');}
+            if (nextIndex == 2 && direction == "up" || nextIndex == 4 && direction == "down") {
+
+              if(fp_flag == 1){
+                fp_flag = 0;
+                $.fn.fullpage.moveTo(nextIndex);
+              } else{
+                //$.fn.fullpage.setMouseWheelScrolling(true);
+                //$.fn.fullpage.setAllowScrolling(true);
+
+              //$.fn.fullpage.setMouseWheelScrolling(true);
+              //$.fn.fullpage.setAllowScrolling(true);
+              $('.stat').not('.stat-abs').removeClass('fix-stat');
+              //$('body').css('overflow','visible');
+              fp_flag = 1;
+              return false
+              }
+              
+            }
             //if (direction=='down'&&$(this).next().hasClass('sec4')|| direction=='down'&&$(this).next().hasClass('sec6')||direction=='up'&&$(this).prev().hasClass('sec4')|| direction=='up'&&$(this).prev().hasClass('sec6')) {$('.fixed-menu-logo').addClass('blacked')}else{$('.fixed-menu-logo').removeClass('blacked')}
           },
       afterRender: function(){
@@ -246,6 +281,8 @@ function initfullpage(){
    $('header').addClass('fadeInDown animated');
    setTimeout(function(){$('header').removeClass('fadeInDown animated');},1100);
   }
+var lastScrollTop = 0;
+var fp_flag = 0;
 var block_h = ['Раздел','Раздел','Раздел','Раздел','Раздел','Раздел','Раздел','Раздел','Раздел','Раздел','Раздел'];
 
 function hfixed(){if($(window).scrollTop()>25){
@@ -255,6 +292,19 @@ function hfixed(){if($(window).scrollTop()>25){
     $('.fixed-menu-logo').removeClass('fix');
     $('.menu').removeClass('fix-m');
   }}
+
+function block2(){
+  var st = $('.scrolled-wrap').scrollTop();
+  var top = $('.dinam:visible').offset().top;
+  var bot = $('.dinam:visible').parent().height() - top - $('.dinam:visible').height();
+  if(top==$(window).height()*2&&st < lastScrollTop && $('body').hasClass('fp-viewing-2') || bot==-$(window).height()*2 && $('body').hasClass('fp-viewing-2')&& st > lastScrollTop){
+                $.fn.fullpage.setMouseWheelScrolling(true);
+                $.fn.fullpage.setAllowScrolling(true);
+  }
+console.log(top,bot,$(window).height()*2,st,lastScrollTop);
+   lastScrollTop = st;
+}
+
 });
 
   
