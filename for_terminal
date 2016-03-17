@@ -21,4 +21,14 @@ npm install grunt-autoprefixer --save-dev
 npm install grunt-reload --save-dev
 npm install grunt-browser-sync --save-dev
 npm install grunt-ftpush --save-dev
+npm install grunt-ftp-deploy --save-dev
+grunt
+
+cd ../../Volumes/Workspace/CACHE/GITHUB/bankrotstvo
+grunt 'ftp-deploy' -d
+
+cd ../../Volumes/Workspace/CACHE/GITHUB/bankrotstvo
+grunt ftpush -d
+
+cd ../../Volumes/Workspace/CACHE/GITHUB/bankrotstvo
 grunt

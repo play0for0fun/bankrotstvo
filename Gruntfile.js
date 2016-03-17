@@ -45,32 +45,66 @@ module.exports = function(grunt) {
 		ftpush: {
 		  build: {
 		    auth: {
-		    	host:'31.170.164.107',
+		      host:'31.170.164.107',
 		      //host:'ftp.webdone.xyz',
 		      port:21,
-		      authKey:
-		      {
-		      	"username": "",
-    			"password": ""}
-		      },
-		    src: '',
-		    dest: 'public_html/dolhi',
+		      authKey:'key2'		      
+		    },
+		    src: 'img/',
+		    dest: 'dolhi/img',
 		    exclusions: [
 		      '**/.DS_Store',
 		      '**/Thumbs.db',
-		      '**/node_modules/**',
-		      '**/.gitignore',
+		      './node_modules/**',
+		      './node_modules',
+		      './.gitignore',
+		      './css/libs',
+		      './css/libs/**',
+		      './js/libs/**',
+		      './js/libs',
 		      '.editorconfig',
 		      '.ftppass',
 		      '.grunt',
-		      '**/.git/**',
+		      './.git/**',
+		      './.git',
 		      '.jshintrc',
 		      'package.json',
 		      'for_terminal',
 		      'Gruntfile.js'
-		    ],
-		    keep: [],
-		    simple: true
+		    ]
+		  }
+		},
+		'ftp-deploy': {
+		  build: {
+		    auth: {
+		      host:'31.170.164.107',
+		      //host:'ftp.webdone.xyz',
+		      port:21,
+		      authKey:'key2'		      
+		    },
+		    src: './',
+		    dest: 'public_html/dolhi',
+		    exclusions: [
+		      '**/.DS_Store',
+		      '**/Thumbs.db',
+		      './node_modules/**',
+		      './node_modules',
+		      './.gitignore',
+		      './img/**',
+		      './css/libs',
+		      './css/libs/**',
+		      './js/libs/**',
+		      './js/libs',
+		      '.editorconfig',
+		      '.ftppass',
+		      '.grunt',
+		      './.git/**',
+		      './.git',
+		      '.jshintrc',
+		      'package.json',
+		      'for_terminal',
+		      'Gruntfile.js'
+		    ]
 		  }
 		},
 		autoprefixer: {
@@ -94,11 +128,21 @@ module.exports = function(grunt) {
 			    options: {
 			        spawn: false,
 			    }
-			}//,
-			//ftpush: {
-			//	files: ['**/*','!**/node_modules/**'],
-			//	tasks: ['ftpush']
-			//}
+			},
+			'ftp-deploy': {
+				files: ['**/*.html','**/*.css','**/*.js','!**/node_modules/**'],
+				tasks: ['ftp-deploy'],
+				options: {
+			        spawn: false,
+			    },
+			},
+			ftpush: {
+				files: ['img/**','!**/node_modules/**'],
+				tasks: ['ftpush'],
+				options: {
+			        spawn: false,
+			    },
+			}
 		}
 
     });
@@ -110,7 +154,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-autoprefixer');
-    grunt.loadNpmTasks('grunt-ftpush'); 
+    grunt.loadNpmTasks('grunt-ftpush');
+    grunt.loadNpmTasks('grunt-ftp-deploy');
 
     // 4. Указываем, какие задачи выполняются, когда мы вводим «grunt» в терминале
     grunt.registerTask('default', ['concat','uglify','cssmin','watch']);

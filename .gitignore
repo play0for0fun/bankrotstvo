@@ -1,1 +1,9 @@
-node_modules/*
+**/node_modules/**
+/package.json
+/Gruntfile.js
+**.DS_Store**
+/for_terminal
+**Thumbs.db**
+**.editorconfig**
+**.ftppass**
+**.grunt**
