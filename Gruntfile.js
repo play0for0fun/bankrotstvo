@@ -45,10 +45,10 @@ module.exports = function(grunt) {
 		ftpush: {
 		  build: {
 		    auth: {
-		      host:'31.170.164.107',
+		      host:'31.170.165.128',
 		      //host:'ftp.webdone.xyz',
 		      port:21,
-		      authKey:'key2'		      
+		      authKey:"key2"		      
 		    },
 		    src: 'img/',
 		    dest: 'dolhi/img',
@@ -77,7 +77,7 @@ module.exports = function(grunt) {
 		'ftp-deploy': {
 		  build: {
 		    auth: {
-		      host:'31.170.164.107',
+		      host:'31.170.165.128',
 		      //host:'ftp.webdone.xyz',
 		      port:21,
 		      authKey:'key2'		      

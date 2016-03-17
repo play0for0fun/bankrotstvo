@@ -26,8 +26,6 @@ grunt
 
 cd ../../Volumes/Workspace/CACHE/GITHUB/bankrotstvo
 grunt 'ftp-deploy' -d
-
-cd ../../Volumes/Workspace/CACHE/GITHUB/bankrotstvo
 grunt ftpush -d
 
 cd ../../Volumes/Workspace/CACHE/GITHUB/bankrotstvo
