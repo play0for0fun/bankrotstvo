@@ -77,7 +77,7 @@ a { text-decoration: none; color: inherit; outline: 0px !important; }
 }
 .not-fixed-part{
     float: right;
-    width: 960px;
+    width: 860px;
 }
 .menu_btn { width: 20px; height: 12px; display: block; float: left; margin-top: 35px; background: url("../img/menu_im.png") 50% 0% no-repeat; }
 section{
@@ -565,7 +565,7 @@ form input { width: 301px; height: 49px; border: 1px solid black; margin-top: 8p
 form .btn_f { width: 301px;height: 49px; box-shadow: rgb(135, 77, 19) 0px 2px 0px;margin-top: 5px; color: white; font-family: MuseoSansCyrl; font-size: 16px; line-height: 46px; font-style: normal; text-align: center; letter-spacing: 0.6px; padding-left: 0px;transition: all 0.25s;border: none; cursor: pointer;background: url("../img/btn_f.png")no-repeat center rgb(188, 124, 61);}
 .btn_f:hover {background: url("../img/btn_f.png")no-repeat center rgb(150, 109, 70);}
 footer { padding-top: 28px; padding-bottom: 21px; background-color: rgb(36, 37, 41); }
-.logo_foot { height: 66px; color: white; font-family: MuseoSansCyrl; font-size: 16px; line-height: 22px; float: left; text-align: left; padding-left: 71px; margin-left: 94px; padding-top: 10px; letter-spacing: 0.6px; font-weight: 500; background: url("../img/logo.png") 0px 0px no-repeat; }
+.logo_foot {height: 66px;color: white;font-family: MuseoSansCyrl;font-size: 16px;line-height: 22px;float: left;text-align: left;padding-left: 129px;margin-left: 94px;padding-top: 13px;letter-spacing: 0.6px;font-weight: 500;background: url("../img/logo.png") 0px 0px no-repeat;background-size: contain;}
 .logo_gs { color: white; font-family: MuseoSansCyrl; font-size: 16px; line-height: 22px; font-weight: 500; height: 42px; float: right; padding-right: 224px; text-align: left; margin-right: 41px; margin-top: 8px; letter-spacing: 0.6px; padding-top: 2px; background: url("../img/logo_gs.png") 100% 0px no-repeat; }
 .menu {height: 100vh;padding-top: 59px;/* background: rgb(23, 23, 22); */position: fixed;left: 50%;top: 0;margin-left: -588px;}
 .menu.fix-m{
@@ -591,7 +591,7 @@ a { text-decoration: none; color: inherit; outline: 0px !important; }
 .menu_btn {width: 40px;height: 40px; display: block; float: left;margin-left: -10px;margin-top: 21px;background: url("../img/menu_im.png") 50% 50% no-repeat;transition: all 0.25s;}
 .menu_btn:hover{transform: rotate(180deg);}
 header {position: absolute;top: 25px;width: 100%;text-align: center;z-index: 5;}
-.logo_t { height: 66px; display: block; float: left;margin-left: 17px; margin-top: 10px; font-family: MuseoSansCyrl; font-size: 20px; line-height: 21px; font-weight: 700; padding-left: 77px; padding-top: 10px; text-align: left;transition: all 0.25s;width: 160px;background: url("../img/logo.png") 0px 0px no-repeat;}
+.logo_t {height: 121px;display: block;float: left;margin-left: 17px;margin-top: 0;font-family: MuseoSansCyrl;font-size: 20px;line-height: 21px;font-weight: 700;padding-left: 77px;padding-top: 10px;text-align: left;transition: all 0.25s;width: 218px;background: url("../img/logo.png") 0px 0px no-repeat;}
 .logo_t span { font-weight: 500; }
 .point_gr { position: absolute; top: 470px; left: -54px; }
 .point_gr a { display: block; clear: both; }
@@ -629,12 +629,12 @@ header {position: absolute;top: 25px;width: 100%;text-align: center;z-index: 5;}
 .stat.stat-abs{
     display: none;
 }
-.stat { width: 302px; float: left;padding-top: 76px;position: relative;z-index: 4;}
+.stat {width: 302px;float: left;padding-top: 120px;position: relative;z-index: 4;}
 .sec3 {height: 1325px;background: url("../img/bg_sec3.jpg") 50% 50% no-repeat;z-index: 3;}
 .sec3 .middle-wrap{
     padding-left: 302px;
 }
-.kto { font-family: 'Noto Serif'; font-size: 19px; font-style: italic; line-height: 26px; text-align: left; font-weight: 400; margin-top: 43px; margin-left: 69px; letter-spacing: 0.3px; margin-bottom: 32px; }
+.kto {font-family: 'Noto Serif';font-size: 19px;font-style: italic;line-height: 26px;text-align: left;font-weight: 400;margin-top: 36px;margin-left: 69px;letter-spacing: 0.3px;margin-bottom: 32px;}
 .kto_t { color: white; font-family: MuseoSansCyrl; font-size: 22px; line-height: 27px; font-weight: 400;width: 318px; height: 74px; display: block; margin-left: -4px; text-align: left; padding-left: 77px; letter-spacing: 0.4px;/* transition: background-image 0.25s; */margin-bottom: -1px;}
 .kto_dol { padding-top: 24px; background: url("../img/dol_im.png") 23px 23px no-repeat; }
 .kto_dol:hover,.kto_dol.active { color: rgb(249, 168, 89); font-weight: 700; background: url("../img/dol_imh.png") 23px 23px no-repeat, url("../img/kto_im.png") 50% 0% no-repeat; }
