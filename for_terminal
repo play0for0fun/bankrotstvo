@@ -1,5 +1,8 @@
 cd ../../Volumes/Workspace/CACHE/GITHUB/bankrotstvo
 
+
+cd /d D:\WORKSPACE\GITHUB\bankrotstvo
+
 sudo npm install grunt --save-dev
 
 
