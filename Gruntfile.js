@@ -130,14 +130,14 @@ module.exports = function(grunt) {
 			    }
 			},
 			'ftp-deploy': {
-				files: ['**/*.html','**/*.css','**/*.js','!**/node_modules/**'],
+				files: ['js/*.js','css/*.css','ajax/*.*','*.html','!**/node_modules/**'],
 				tasks: ['ftp-deploy'],
 				options: {
 			        spawn: false,
 			    },
 			},
 			ftpush: {
-				files: ['img/**','!**/node_modules/**'],
+				files: ['img/*.*','!**/node_modules/**'],
 				tasks: ['ftpush'],
 				options: {
 			        spawn: false,

@@ -22,6 +22,25 @@ npm install grunt-reload --save-dev
 npm install grunt-browser-sync --save-dev
 npm install grunt-ftpush --save-dev
 npm install grunt-ftp-deploy --save-dev
+
+
+npm install grunt --save-dev
+npm install time-grunt --save
+npm install load-grunt-config --save-dev
+npm install grunt-concurrent --save-dev
+npm install grunt-contrib-imagemin --save-dev
+npm install grunt-contrib-uglify --save-dev
+npm install grunt-contrib-watch --save-dev
+npm install grunt-contrib-concat --save-dev
+npm install grunt-contrib-cssmin --save-dev
+npm install grunt-contrib-watch --save-dev
+npm install grunt-autoprefixer --save-dev
+npm install grunt-ftpush --save-dev
+npm install grunt-ftp-deploy --save-dev
+
+grunt 'ftp-deploy' -d
+grunt ftpush -d
+
 grunt
 
 cd ../../Volumes/Workspace/CACHE/GITHUB/bankrotstvo
