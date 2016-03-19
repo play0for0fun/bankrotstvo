@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>BING</title>
-    <meta id="viewport" name="viewport" content="width=1200">
+    <meta id="viewport" name="viewport" content="width=1240">
     <style>#loader:after,#loader:before{content:"";position:absolute;height:initial;width:initial}#loader-wrapper{position:fixed;top:0;left:0;width:100%;height:100%;z-index:1000}#loader{display:block;position:relative;left:50%;top:50%;width:150px;height:150px;margin:-75px 0 0 -75px;border-radius:50%;border:3px solid transparent;border-top-color:#3498db;-webkit-animation:spin 2s linear infinite;animation:spin 2s linear infinite;z-index:1001}#loader:before{top:5px;left:5px;right:5px;bottom:5px;border-radius:50%;border:3px solid transparent;border-top-color:#e74c3c;-webkit-animation:spin 3s linear infinite;animation:spin 3s linear infinite}#loader:after{top:15px;left:15px;right:15px;bottom:15px;border-radius:50%;border:3px solid transparent;border-top-color:#f9c922;-webkit-animation:spin 1.5s linear infinite;animation:spin 1.5s linear infinite}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes spin{0%{-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg)}}#loader-wrapper .loader-section{position:fixed;top:0;width:51%;height:100%;background:#222;z-index:1000;-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}#loader-wrapper .loader-section.section-left{left:0}#loader-wrapper .loader-section.section-right{right:0}.loaded #loader-wrapper .loader-section.section-left{-webkit-transform:translateX(-100%);-ms-transform:translateX(-100%);transform:translateX(-100%);-webkit-transition:all .7s .3s cubic-bezier(.645,.045,.355,1);transition:all .7s .3s cubic-bezier(.645,.045,.355,1)}.loaded #loader-wrapper .loader-section.section-right{-webkit-transform:translateX(100%);-ms-transform:translateX(100%);transform:translateX(100%);-webkit-transition:all .7s .3s cubic-bezier(.645,.045,.355,1);transition:all .7s .3s cubic-bezier(.645,.045,.355,1)}.loaded #loader{opacity:0;-webkit-transition:all .3s ease-out;transition:all .3s ease-out}.loaded #loader-wrapper{visibility:hidden;-webkit-transform:translateY(-100%);-ms-transform:translateY(-100%);transform:translateY(-100%);-webkit-transition:all .3s 1s ease-out;transition:all .3s 1s ease-out}.no-js #loader-wrapper{display:none}.no-js h1{color:#222}#content{margin:0 auto;padding-bottom:50px;width:80%;max-width:978px}</style>
     <link rel="stylesheet" href="css/libs_old.css">
     <link rel="stylesheet" href="css/style.css">
@@ -286,6 +286,14 @@
                         <br>подконтрольного
                         <br>арбитражного
                         <br>управляющего</p>
+                    <div class="form_gr">
+                    <h2>Получите консультацию от <br>профессионального Юриста <br>прямо сейчас!</h2>
+                    <form action="ajax/mail.php" method="post">
+                        <input type="text" placeholder="Ваше имя" name="name" class="inp_f">
+                        <input type="text" placeholder="+7 (___) ___-__-__" name="phone" class="inp_f">
+                        <input type="submit" value="Отправить" class="btn_g">
+                    </form>
+                </div>
                 </div>
                 <div class="dinam" data-block="2">
                     <h4 class="komp">Мы контролируем <br>процедуру банкротства</h4>
@@ -294,6 +302,14 @@
                     <p class="arbit">Арбитражный управляющий принимает управление имуществом
                         <br>должника в свое ведение на период процедуры банкротства до
                         <br>момента полного возврата задолженности кредитору.</p>
+                        <div class="form_gr">
+                    <h2>Получите консультацию от <br>профессионального Юриста <br>прямо сейчас!</h2>
+                    <form action="ajax/mail.php" method="post">
+                        <input type="text" placeholder="Ваше имя" name="name" class="inp_f">
+                        <input type="text" placeholder="+7 (___) ___-__-__" name="phone" class="inp_f">
+                        <input type="submit" value="Отправить" class="btn_g">
+                    </form>
+                </div>
                 </div>
                 <div class="dinam" data-block="3">
                     <h4 class="komp">Мы ищем новых партнеров <br>и готовы делиться своим опытом!</h4>
@@ -310,25 +326,7 @@
                     <p class="komp_t kom2">Бухгалтерское
                         <br>сопровождение
                         <br>в процедуре банкротства</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="se3_f section" id="sec5">
-        <div class="se3_f_plaw"></div>
-        <div class="wrap">
-        <div class="stat stat-abs">
-                <p class="kto">В качестве кого вы
-                    <br> выступаете в
-                    <br> процедуре
-                    <br> банкротства</p>
-                <a href="" class="kto_t kto_dol active" data-block="1">Должник</a>
-                <a href="" class="kto_t kto_kre" data-block="2">Кредитор</a>
-                <a href="" class="kto_t kto_arb" data-block="3"> Арбитражный<br>управляющий</a>
-            </div>
-        <div class="middle-wrap">
-            <div class="wrap">
-                <div class="form_gr">
+                        <div class="form_gr">
                     <h2>Получите консультацию от <br>профессионального Юриста <br>прямо сейчас!</h2>
                     <form action="ajax/mail.php" method="post">
                         <input type="text" placeholder="Ваше имя" name="name" class="inp_f">
@@ -336,8 +334,8 @@
                         <input type="submit" value="Отправить" class="btn_g">
                     </form>
                 </div>
+                </div>
             </div>
-        </div>
         </div>
     </section>
     <section class="sec4 section" id="sec6">
@@ -419,7 +417,7 @@
                         <br> оздоровление
                     </p>
                     </div>
-                    <div class="et_im2 etr"></div>
+                    <div class="et_im3 etr"></div>
                     <div class="eta3">
                     <p class="et8">Мировое соглашение</p>
                     </div>
@@ -521,8 +519,7 @@
             </div>
     <footer>
         <div class="wrap">
-            <p class="logo_foot">© 2016 Юридическое агентство
-                <br>Профессионал</p>
+            <p class="logo_foot"></p>
             <p class="logo_gs">Разработка сайта: </p>
         </div>
     </footer>

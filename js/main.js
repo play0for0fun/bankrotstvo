@@ -4,7 +4,7 @@ $(document).ready(function(){
 
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
   if(!$('body').hasClass('loaded')) {$('body').addClass('loaded')};
-    $('<style>section,.section{height:800px;display:block}.animation,.animation2,.animation3{opacity:1}</style>').appendTo('head');
+    $('<style>section,.section{height:800px!important;display:block}.animation,.animation2,.animation3{opacity:1}section.se3_f_n{height:600px!important}</style>').appendTo('head');
   }
 
       console.log('ftp-push');
@@ -72,6 +72,7 @@ $(document).ready(function(){
   $('.kto_t').click(function(e){
     e.preventDefault();
     if (!$(this).hasClass('active')) {
+      $("html, body").animate({ scrollTop: $('#sec3').offset().top}, 1000);
       $('.dinam[data-block="'+$('.kto_t.active').data('block')+'"]').fadeOut();
       $('.dinam[data-block="'+$(this).data('block')+'"]').fadeIn();
       $('.kto_t.active').removeClass('active');
@@ -151,8 +152,8 @@ $(window).load(function(){
           $('#sld1 li[data-sld="'+newIndex+'"]').addClass('active');
         //$('#sld1 li').addClass('fadeouted');
         //$slideElement.addClass('active').removeClass('fadeouted');
-        //$('.slid_im1,.man').removeClass('active');
-        //$('.slid_im1[data-sld="'+newIndex+'"],.man[data-sld="'+newIndex+'"]').addClass('active');
+        $('.slid_im1,.man').removeClass('active');
+        $('.slid_im1[data-sld="'+newIndex+'"],.man[data-sld="'+newIndex+'"]').addClass('active');
       },
       onSlidePrev:function($slideElement, oldIndex, newIndex){
 
@@ -162,8 +163,8 @@ $(window).load(function(){
           $('#sld1 li[data-sld="'+newIndex+'"]').addClass('active');
         //$('#sld1 li').addClass('fadeouted');
         //$slideElement.addClass('active').removeClass('fadeouted');
-        //$('.slid_im1,.man').removeClass('active');
-        //$('.slid_im1[data-sld="'+newIndex+'"],.man[data-sld="'+newIndex+'"]').addClass('active');
+        $('.slid_im1,.man').removeClass('active');
+        $('.slid_im1[data-sld="'+newIndex+'"],.man[data-sld="'+newIndex+'"]').addClass('active');
       },
       onSliderLoad:function(){
         $('#sld1 li.active.bx-clone').removeClass('active');
@@ -207,6 +208,7 @@ $(window).load(function(){
         $('.podh_t').addClass('fadeouted');
         $('.podh_t.active').removeClass('fadeouted');
       }});
+    slider2.goToSlide(0);
 
   $('.pod_left').click(function(e){e.preventDefault();slider2.goToPrevSlide();});
   $('.pod_right').click(function(e){e.preventDefault();slider2.goToNextSlide();});
@@ -227,14 +229,14 @@ function initfullpage(){
             $(this).find('.animation3').addClass('fadeIn animated');
             if ($(this).hasClass('sec4')|| $(this).hasClass('sec6')) {$('.fixed-menu-logo').addClass('blacked')}else{$('.fixed-menu-logo').removeClass('blacked')}
             if (!$(this).hasClass('sec1')&&!$('#fp-nav').hasClass('animated')) {$('#fp-nav').addClass('fadeIn animated')}
-            if(index == 3 || index == 4 || index == 5){$('.stat').not('.stat-abs').addClass('fix-stat');$('.stat-abs').removeClass('stat-show');}else{$('.stat').not('.stat-abs').removeClass('fix-stat')}
+            if(index == 3 || index == 4){$('.stat').not('.stat-abs').addClass('fix-stat');$('.stat-abs').removeClass('stat-show');}else{$('.stat').not('.stat-abs').removeClass('fix-stat')}
           },
       onLeave: function(index, nextIndex, direction){
             $('.section:nth-child('+nextIndex+')').find('.animation').addClass('fadeInUp animated');
             $('.section:nth-child('+nextIndex+')').find('.animation2').addClass('fadeInDown animated');
             $('.section:nth-child('+nextIndex+')').find('.animation3').addClass('fadeIn animated');
             if (nextIndex == 2 && direction == "up") {$('.stat').not('.stat-abs').removeClass('fix-stat');}
-            if (nextIndex == 6 && direction == "down") {$('.stat').not('.stat-abs').removeClass('fix-stat');$('.stat-abs').addClass('stat-show');}
+            if (nextIndex == 5 && direction == "down") {$('.stat').not('.stat-abs').removeClass('fix-stat');$('.stat-abs').addClass('stat-show');}
             //if (direction=='down'&&$(this).next().hasClass('sec4')|| direction=='down'&&$(this).next().hasClass('sec6')||direction=='up'&&$(this).prev().hasClass('sec4')|| direction=='up'&&$(this).prev().hasClass('sec6')) {$('.fixed-menu-logo').addClass('blacked')}else{$('.fixed-menu-logo').removeClass('blacked')}
           },
       afterRender: function(){
