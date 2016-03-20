@@ -7,7 +7,6 @@ $(document).ready(function(){
     $('<style>section,.section{height:800px!important;display:block}.animation,.animation2,.animation3{opacity:1}section.se3_f_n{height:600px!important}</style>').appendTo('head');
   }
 
-      console.log('ftp-push');
       
   $('#zz-btn').click(function(e) {
     e.preventDefault();
