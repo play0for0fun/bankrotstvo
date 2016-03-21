@@ -52,7 +52,7 @@ a::after, a::before, br::after, br::before, img::after, img::before, span::after
 .wrap { position: relative; margin: 0px auto; max-width: 1170px; width: 100%; height: 100%; text-align: center; }
 .clear { clear: both; }
 h1, h2, h3, h4, h5 { font-size: 1em; font-weight: inherit; text-align: center; }
-body {color: white;font-family: MuseoSansCyrl;-webkit-text-size-adjust: none;}
+body {color: white;font-family: MuseoSansCyrl;}
 a { text-decoration: none; color: inherit; outline: 0px !important; }
 .animation,.animation2,.animation3{opacity:0;animation-delay: 0.5s;}
 .middle-wrap{
@@ -320,8 +320,8 @@ header {
 .dinam h3 {
     color: #242529;
     font-family: MuseoSansCyrl;
-    font-size: 42px;
-    line-height: 41px;
+    font-size: 36px;
+    line-height: 38px;
     font-weight: 700;
     text-align: left;
     letter-spacing: 0.3px;
@@ -355,6 +355,7 @@ header {
 #sld1 li{
     opacity: 1;
     transition: all 0.5s;
+    height: 194px;
 }
 .str_l:hover{
     left: -3px;
@@ -527,7 +528,7 @@ header {
 .ruk_t h3 { color: rgb(36, 37, 41); font-family: MuseoSansCyrl; font-size: 30px; line-height: 42px; font-weight: 700; text-align: left; letter-spacing: 0.9px; }
 .ruk_t span { font-family: 'Noto Serif'; font-size: 19px; font-style: italic; font-weight: 400; color: rgb(36, 37, 41); letter-spacing: 0.4px; margin-top: 3px; display: inline-block; margin-left: 4px; }
 .ruk_t p { color: rgb(36, 37, 41); font-family: 'Noto Serif'; font-size: 16px; font-weight: 400;width: 475px;line-height: 21px; margin-top: 21px; margin-left: 5px; letter-spacing: 0.3px;}
-.podp { width: 223px; height: 72px; float: right; margin-right: 123px;margin-top: -10px; background: url("../img/podp_im.png") 50% 0% no-repeat;}
+.podp {width: 111px;height: 217px;float: right;margin-right: 80px;margin-top: -58px;background: url("../img/podp_im.png") 50% 0% no-repeat;}
 .sec7 { height: 1097px;/* padding-top: 157px; */ background: url("../img/bg_sec7.jpg") 50% 0% no-repeat;}
 .sec7 h2 { color: white; font-family: MuseoSansCyrl; font-size: 41px; font-weight: 700; letter-spacing: 1px; padding-bottom: 47px; line-height: 52px; background: url("../img/titl_din.png") 50% 100% no-repeat;margin-top: -10px;}
 .sec7 h2 span { color: rgb(202, 140, 81); font-family: 'Noto Serif'; font-size: 32px; font-style: italic; font-weight: 400; letter-spacing: 0.4px; }
@@ -703,14 +704,14 @@ header {position: absolute;top: 25px;width: 100%;text-align: center;z-index: 5;m
 .se3_f_n .kom2 {float: left;width: 250px;margin-left: 40px;margin-bottom: 0px;margin-top: 17px;}
 .se3_f_n .kom3 {float: right;width: 170px;/* margin-right: -24px; */margin-bottom: 0px;margin-top: 15px;}
 .st1 .vre {padding-bottom: 30px;}
-.st1 .osv {margin-top: 20px; letter-spacing: 1.3px;padding-bottom: 10px;}
+.st1 .osv {margin-top: 20px;letter-spacing: 1.3px;padding-bottom: 10px;margin-top: 10px;letter-spacing: 1.3px;padding-bottom: 10px;}
 .st1 .osv1 { margin-left: 2px; }
 .st1 .osv2 { margin-left: 141px; }
 .st1 .osv3 { margin-right: -24px; }
 .st1 .prob {margin-top: 30px;margin-bottom: 15px;}
 .st1 .komp {margin-top: 250px; margin-left: 12px;margin-bottom: 23px;}
 .st2 .vre {padding-bottom: 30px;margin-bottom: 10px;}
-.st2 .osv { margin-top: 74px; letter-spacing: 1.3px; padding-bottom: 33px; }
+.st2 .osv {/* margin-top: 74px; *//* letter-spacing: 1.3px; *//* padding-bottom: 33px; */margin-top: 10px;letter-spacing: 1.3px;padding-bottom: 10px;}
 .st2 .osv1 { margin-left: 2px; }
 .st2 .osv2 { margin-left: 161px; }
 .st2 .osv3 { margin-right: -39px; }
@@ -721,7 +722,7 @@ header {position: absolute;top: 25px;width: 100%;text-align: center;z-index: 5;m
 .st2 .komp {margin-top: 250px; margin-left: 0px;margin-bottom: 30px;}
 .voz_t {color: black;font-family: 'Noto Serif';font-size: 19px;font-weight: 400;line-height: 22px;text-align: left;letter-spacing: 0.8px;padding-bottom: 6px;margin-bottom: 48px;margin-left: 5px;padding-left: 73px;background: url("../img/shchit_im.png") 0px 4px no-repeat;margin-top: 70px;}
 .arbit {color: rgb(36, 37, 41);font-family: MuseoSansCyrl;font-size: 21px;line-height: 22px;text-align: left;padding-bottom: 30px;margin-left: 3px;letter-spacing: 0.7px;background: url("../img/arbit_tit.png") 1px 100% no-repeat;}
-.st3 .vre { padding-bottom: 34px; }
+.st3 .vre {/* padding-bottom: 34px; */padding-bottom: 30px;margin-bottom: 10px;}
 .st3 .osv {margin-top: 10px; letter-spacing: 1.3px;padding-bottom: 10px;}
 .st3 .osv1 { margin-left: 2px; }
 .st3 .osv2 { margin-left: 174px; }
