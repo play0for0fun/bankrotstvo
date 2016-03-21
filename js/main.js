@@ -250,6 +250,8 @@ function initfullpage(){
 var block_h = ['Раздел','Раздел','Раздел','Раздел','Раздел','Раздел','Раздел','Раздел','Раздел','Раздел','Раздел'];
 
 function hfixed(){if($(window).scrollTop()>25){
+   if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {}else{$('.fixed-menu-logo').css('top',$(window).scrollTop()-25);}
+    
     $('.fixed-menu-logo').addClass('fix');
     $('.menu').addClass('fix-m');
   }else{

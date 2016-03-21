@@ -68,8 +68,18 @@ a { text-decoration: none; color: inherit; outline: 0px !important; }
 .fixed-menu-logo{
     float: left;
 }
+.fixed-menu-logo .stat{
+    padding-top: 120px;
+    float: none;
+    display: none;
+}
+.fixed-menu-logo .stat.fix-stat{
+    position: static;
+    margin-left: 0;
+    display: block;
+}
 .fixed-menu-logo.fix{
-    position: fixed;
+    position: absolute;
     top: 0px;
     /* left: 0px; */
     z-index: 10;
@@ -291,10 +301,11 @@ header {
 .proc_fon:hover .anti_h {}
 .stat { width: 300px; float: left;/* padding-top: 21px; */}
 .stat.fix-stat {
-    position: fixed;
-    top: 0;
-    left: 50%;
-    margin-left: -585px;
+    /* position: fixed; */
+    /* top: 0; */
+    /* left: 50%; */
+    /* margin-left: -585px; */
+    display: none;
 }
 .sec3 { height: 1100px; background: url("../img/bg_sec3.jpg") 50% 0% no-repeat; }
 .kto { font-family: 'Noto Serif'; font-size: 19px; font-style: italic; line-height: 26px; text-align: left; font-weight: 400; margin-top: 43px; margin-left: 69px; letter-spacing: 0.3px; margin-bottom: 32px;}
@@ -581,7 +592,7 @@ form .btn_f { width: 301px;height: 49px; box-shadow: rgb(135, 77, 19) 0px 2px 0p
 footer { padding-top: 28px; padding-bottom: 21px; background-color: rgb(36, 37, 41); }
 .logo_foot {height: 66px;color: white;font-family: MuseoSansCyrl;font-size: 16px;line-height: 22px;float: left;text-align: left;padding-left: 129px;margin-left: 94px;padding-top: 13px;letter-spacing: 0.6px;font-weight: 500;background: url("../img/logo.png") 0px 0px no-repeat;background-size: contain;}
 .logo_gs { color: white; font-family: MuseoSansCyrl; font-size: 16px; line-height: 22px; font-weight: 500; height: 42px; float: right; padding-right: 224px; text-align: left; margin-right: 41px; margin-top: 8px; letter-spacing: 0.6px; padding-top: 2px; background: url("../img/logo_gs.png") 100% 0px no-repeat; }
-.menu {height: 100vh;padding-top: 59px;/* background: rgb(23, 23, 22); */position: fixed;left: 50%;top: 0;margin-left: -588px;}
+.menu {height: 100vh;padding-top: 59px;/* background: rgb(23, 23, 22); */position: absolute;padding-left: 30px;top: 0;left: 0;/* width: 1240px; *//* margin-left: -620px; */}
 .menu.fix-m{
     padding-top: 34px;
 }
@@ -604,7 +615,7 @@ a { text-decoration: none; color: inherit; outline: 0px !important; }
 .blacked .logo_t{color: #242529;}
 .menu_btn {width: 40px;height: 40px; display: block; float: left;margin-left: -10px;margin-top: 21px;background: url("../img/menu_im.png") 50% 50% no-repeat;transition: all 0.25s;}
 .menu_btn:hover{transform: rotate(180deg);}
-header {position: absolute;top: 25px;width: 100%;text-align: center;z-index: 5;}
+header {position: absolute;top: 25px;width: 100%;text-align: center;z-index: 5;min-width: 1240px;}
 .logo_t {height: 80px;display: block;float: left;margin-left: 17px;margin-top: 0;font-family: MuseoSansCyrl;font-size: 20px;line-height: 21px;font-weight: 700;padding-left: 77px;padding-top: 10px;text-align: left;transition: all 0.25s;width: 218px;background: url("../img/logo.png") 0px 0px no-repeat;background-size: contain;}
 .logo_t span { font-weight: 500; }
 .point_gr { position: absolute; top: 470px; left: -54px; }
