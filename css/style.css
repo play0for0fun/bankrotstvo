@@ -52,7 +52,7 @@ a::after, a::before, br::after, br::before, img::after, img::before, span::after
 .wrap { position: relative; margin: 0px auto; max-width: 1170px; width: 100%; height: 100%; text-align: center; }
 .clear { clear: both; }
 h1, h2, h3, h4, h5 { font-size: 1em; font-weight: inherit; text-align: center; }
-body { color: white; font-family: MuseoSansCyrl; -webkit-text-size-adjust: 100%;}
+body {color: white;font-family: MuseoSansCyrl;-webkit-text-size-adjust: none;}
 a { text-decoration: none; color: inherit; outline: 0px !important; }
 .animation,.animation2,.animation3{opacity:0;animation-delay: 0.5s;}
 .middle-wrap{
@@ -553,7 +553,7 @@ header {
     animation-delay: 0.9s;
 }
 .podh_t.active{}
-.podh_t p { color: rgb(36, 37, 41); font-family: 'Noto Serif'; font-size: 16px; font-weight: 400; display: inline-block; margin-top: 42px; width: 745px; text-align: left; position: relative; letter-spacing: 0.6px; }
+.podh_t p {color: rgb(36, 37, 41);font-family: 'Noto Serif';font-size: 16px;font-weight: 400;display: inline-block;margin-top: 42px;width: 745px;text-align: left;position: relative;margin-bottom: 40px;letter-spacing: 0.6px;-webkit-text-size-adjust: none;}
 .podh_t p span { color: rgb(133, 93, 54); font-family: 'Noto Serif'; font-size: 65px; font-weight: 400; line-height: 22px; position: absolute; left: -48px; top: 6px; letter-spacing: 0px; }
 .podh_t p::after { content: ""; width: 117px; height: 120px; position: absolute; right: -101px; bottom: -37px; background: url("../img/pechat_im.png") 50% 0% no-repeat; }
 .pod_left { width: 51px; height: 52px; position: absolute;top: 64%; margin-top: -47px;left: 86px; background: url("../img/pod_left.png") 50% 50% no-repeat;transition: all 0.25s;}
