@@ -160,5 +160,6 @@ module.exports = function(grunt) {
     // 4. Указываем, какие задачи выполняются, когда мы вводим «grunt» в терминале
     grunt.registerTask('default', ['concat','uglify','cssmin','watch']);
     grunt.registerTask('fin', ['autoprefixer','concat','uglify','cssmin','imagemin']);
+    grunt.registerTask('ftp', ['ftp-deploy','ftpush']);
 
 };
