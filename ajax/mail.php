@@ -14,7 +14,7 @@ $creative = $_POST['creative'];
 $matchtype = $_POST['matchtype'];
 $location = $_POST['location'];
 
-$subject = 'Заявка';	
+$subject = 'Заявка Банкротсво';	
 
 //$headers= "From: noreply <noreply@noreply.ru>\r\n";
 //$headers.= "Reply-To: noreply <noreply@noreply.ru>\r\n";
@@ -22,7 +22,7 @@ $subject = 'Заявка';
 $headers.= "MIME-Version: 1.0" . "\r\n";
 $headers.= "Content-type: text/plain; charset=utf-8\r\n";
 
-$to = "s9681570@yandex.ru";
+$to = "gidrolant@gmail.com";
 
 $message .= "Имя: $name\n";
 $message .= "Телефон: $phone\n\n";
