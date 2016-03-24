@@ -68,6 +68,11 @@ $(document).ready(function(){
     $('#k_ok,#a_ok,#d_ok').removeClass('k-visible fadeInRight animated');
   });
 
+  $('.confbtn').click(function(e){
+    e.preventDefault();
+    $('#conf_pop').arcticmodal();
+  });
+
   $('.kto_t').click(function(e){
     e.preventDefault();
     if (!$(this).hasClass('active')) {
@@ -100,8 +105,20 @@ $(document).ready(function(){
 
   $('.line_menu .menu-scroll-a').click(function(e){e.preventDefault();
     $('.menu').arcticmodal('close');
+    if ($(this).hasClass('click')) {
+      $('.back').trigger('click');
+      $($(this).data('trig')).trigger('click');
+      if (!$('header .kto_t[data-block="'+$(this).data('part')+'"]').hasClass('active')) {
+      //$("html, body").animate({ scrollTop: $('#sec3').offset().top}, 1000);
+      $('.dinam[data-block="'+$('.kto_t.active').data('block')+'"]').fadeOut();
+      $('.dinam[data-block="'+$('header .kto_t[data-block="'+$(this).data('part')+'"]').data('block')+'"]').fadeIn();
+      $('.kto_t.active').removeClass('active');
+      $('header .kto_t[data-block="'+$(this).data('part')+'"]').addClass('active');
+      //console.log('ftp-push');
+    }
+      //$('header .kto_t[data-block="'+$(this).data('part')+'"]').trigger('click');
+    }
     $("html, body").animate({ scrollTop: $($(this).attr('href')).offset().top}, 1000);
-    if ($(this).hasClass('click')) {$($(this).data('trig')).trigger('click');}
   });
 
   function getURLParameter(name) {return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null;} 

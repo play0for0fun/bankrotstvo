@@ -30,8 +30,8 @@ function init() {
     var marker = new google.maps.Marker({
         position: new google.maps.LatLng(55.58211441732942,37.58415400000001),
         map: map,
-        icon:{url:'img/point.png',origin: new google.maps.Point(0, 0),
-  origin: new google.maps.Point(0, 0),size: new google.maps.Size(90, 128),},
+        //icon:{url:'img/point.png',origin: new google.maps.Point(0, 0),
+        //origin: new google.maps.Point(0, 0),size: new google.maps.Size(90, 128),},
         title: 'Юридическое агентство Профессионал'
     });
 
