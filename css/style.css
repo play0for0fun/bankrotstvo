@@ -701,7 +701,7 @@ header {position: absolute;top: 25px;width: 100%;text-align: center;z-index: 5;m
 .komp { color: rgb(36, 37, 41); font-family: MuseoSansCyrl;font-size: 24px;line-height: 24px; font-weight: 700; text-align: left; letter-spacing: 1px;}
 .komp_t {color: black;font-family: 'Noto Serif';font-size: 17px;font-weight: 400;line-height: 22px;text-align: center;letter-spacing: 0.7px;padding-top: 45px;background: url("../img/shchit_im.png") 50% 0% no-repeat;}
 .se3_f_n .kom1 {width: 260px;float: left;/* margin-left: 9px; */margin-bottom: 0px;margin-top: 15px;}
-.se3_f_n .kom2 {float: left;width: 250px;margin-left: 40px;margin-bottom: 0px;margin-top: 17px;}
+.se3_f_n .kom2 {float: left;width: 290px;margin-left: 40px;margin-bottom: 0px;margin-top: 17px;}
 .se3_f_n .kom3 {float: right;width: 170px;/* margin-right: -24px; */margin-bottom: 0px;margin-top: 15px;}
 .st1 .vre {padding-bottom: 30px;}
 .st1 .osv {margin-top: 20px;letter-spacing: 1.3px;padding-bottom: 10px;margin-top: 10px;letter-spacing: 1.3px;padding-bottom: 10px;}
