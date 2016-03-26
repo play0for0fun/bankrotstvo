@@ -1,6 +1,8 @@
 <?php
 $name = $_POST['name'];
 $phone = $_POST['phone'];
+$mess = $_POST['mess'];
+$frmid = $_POST['frmid'];
 $utm_source = $_POST['utm_source'];
 $utm_medium = $_POST['utm_medium'];
 $utm_campaign = $_POST['utm_campaign'];
@@ -22,10 +24,12 @@ $subject = 'Заявка Банкротсво';
 $headers.= "MIME-Version: 1.0" . "\r\n";
 $headers.= "Content-type: text/plain; charset=utf-8\r\n";
 
-$to = "gidrolant@gmail.com";
+$to = "bankrotstvovsem@bk.ru";
 
+$message = "Форма: $frmid\n\n";
 $message .= "Имя: $name\n";
-$message .= "Телефон: $phone\n\n";
+$message .= "Телефон: $phone\n";
+$message .= "Вопрос: $mess\n\n";
 
 $message .= "Источник: $utm_source\n";
 $message .= "Тип источника: $utm_medium\n";
@@ -40,5 +44,5 @@ $message .= "Идентификатор объявления: $creative\n";
 $message .= "Тип соответствия ключа(e-точное/p-фразовое/b-широкое): $matchtype\n";
 $message .= "Гео-положение: $location\n";
 
-//mail($to,$subject,$message,$headers);
+mail ($to,$subject,$message,$headers);
 ?>
