@@ -62,16 +62,65 @@ $(document).ready(function(){
     $('#a_ok3').addClass('s-visible fadeInRight animated');
   });
 
+$('#zz-btn').click(function(e) {
+    e.preventDefault();
+    $('#zz_pop').arcticmodal();
+  });
   $('.back').click(function(e) {
     e.preventDefault();
     $('#a_ok2,#a_ok3,#k_ok2,#k_ok3,#d_ok2,#d_ok3').removeClass('s-visible fadeInRight animated');
     $('#k_ok,#a_ok,#d_ok').removeClass('k-visible fadeInRight animated');
   });
 
-  $('.confbtn').click(function(e){
-    e.preventDefault();
-    $('#conf_pop').arcticmodal();
-  });
+
+  $('.pf1').click(function(){
+      $("#step1_0").val($(this).data('value'));
+    });
+  $('.pf1').click(function(){
+      $("#step2_0").val($(this).data('value'));
+    });
+
+  $('.pf1').click(function(){
+      $("#step3_0").val($(this).data('value'));
+    });
+
+
+$('.d_v1').click(function(){
+      $("#step1_1").val('Сколько Вы должны? : '+$(this).data('value'));
+    });
+
+$('.d_v2').click(function() {
+       $('#step1_2').val('Вы уже подали заявление в суд? : '+$(this).data('value'));
+    });
+
+$('.d_v3').click(function(){
+      $("#step2_1").val('Сколько Вам должны? : '+$(this).data('value'));
+    });
+
+$('.d_v4').click(function() {
+       $('#step2_2').val('Вы уже подали заявление в суд? : '+$(this).data('value'));
+    });
+
+$('.d_v5').click(function(){
+      $("#step3_1").val('Вас уже назначили назначили? : '+$(this).data('value'));
+    });
+
+$('.d_v6').click(function() {
+       $('#step3_2').val('По какой причине Вам необходима экспертная помощь коллег? : '+$(this).data('value'));
+    });
+
+
+$('.mst').click(function() {
+       $('#step4_1').val($(this).data('value'));
+    });
+$('.mst').click(function() {
+       $('#step4_2').val($(this).data('value'));
+    });
+$('.mst').click(function() {
+       $('#step4_3').val($(this).data('value'));
+    });
+
+
 
   $('.kto_t').click(function(e){
     e.preventDefault();

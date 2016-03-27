@@ -1,8 +1,11 @@
 <?php
+$form = $_POST['form'];
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $mess = $_POST['mess'];
 $frmid = $_POST['frmid'];
+$dolh = $_POST['dolh'];
+$syd = $_POST['syd'];
 $utm_source = $_POST['utm_source'];
 $utm_medium = $_POST['utm_medium'];
 $utm_campaign = $_POST['utm_campaign'];
@@ -26,7 +29,12 @@ $headers.= "Content-type: text/plain; charset=utf-8\r\n";
 
 $to = "bankrotstvovsem@bk.ru";
 
-$message = "Форма: $frmid\n\n";
+$message = "От куда?: $frmid\n\n";
+$message .= "$form\n\n";
+
+$message .= "$dolh\n";
+$message .= "$syd\n\n";
+
 $message .= "Имя: $name\n";
 $message .= "Телефон: $phone\n";
 $message .= "Вопрос: $mess\n\n";

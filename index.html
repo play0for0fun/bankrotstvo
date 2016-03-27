@@ -27,9 +27,9 @@
        <br> выступаете в
        <br> процедуре
        <br> банкротства</p>
-      <a href="" class="kto_t kto_dol active" data-block="1">Должник</a>
-      <a href="" class="kto_t kto_kre" data-block="2">Кредитор</a>
-      <a href="" class="kto_t kto_arb" data-block="3"> Арбитражный<br>управляющий</a>
+      <a href="" class="kto_t kto_dol active mst" data-value="Должник"  data-block="1">Должник</a>
+      <a href="" class="kto_t kto_kre mst" data-value="Кредитор" data-block="2">Кредитор</a>
+      <a href="" class="kto_t kto_arb mst" data-value="Арбитражный управляющий" data-block="3"> Арбитражный<br>управляющий</a>
      </div>
     </div>
     <div class="not-fixed-part">
@@ -56,7 +56,7 @@
     <h2><span class="animation3 span2">Помогите нам помочь Вам!</span>
      <span class="animation3 span">В качестве кого вы выступаете в процедуре банкротства</span></h2>
     <div class="proc_gr animation3 k-visible" id="first-step">
-     <div class="proc_fon fon_im1" id="go_c1_s1">
+     <div class="proc_fon fon_im1 pf1" id="go_c1_s1" data-value="Должник">
       <div class="ramka_h">
        <div class="r_v">
         <a href="" class="pig r_vt"></a>
@@ -66,9 +66,9 @@
       </div>
       <p class="anti_h">Должник</p>
      </div>
-     <div class="proc_fon fon_im2" id="go_c2_s1">
+     <div class="proc_fon fon_im2 pf1" id="go_c2_s1" data-value="Кредитор">
+       <div class="r_v" >
       <div class="ramka_h">
-       <div class="r_v">
         <a href="" class="kosh r_vt"></a>
         <p>Кредитор</p>
         <a href="" class="dal">Далее</a>
@@ -76,7 +76,7 @@
       </div>
       <p class="anti_h">Кредитор</p>
      </div>
-     <div class="proc_fon fon_im3" id="go_c3_s1">
+     <div class="proc_fon fon_im3 pf1" id="go_c3_s1" data-value="Арбитражный управляющий">
       <div class="ramka_h">
        <div class="r_v">
         <a href="" class="ves r_vt"></a>
@@ -97,24 +97,27 @@
      <div class="steps-wrap">
       <div class="proc_r s-visible" id="d_ok1">
        <h3>Сколько Вы <br>должны?</h3>
-       <a href="" class="btn_k ok1 go_c1_s2">От 300 тыс 
-        <br>до 1 млн. руб</a>
-       <a href="" class="btn_k ok1 go_c1_s2">От 300 тыс 
-        <br>до 1 млн. руб</a>
-       <a href="" class="btn_k ok1 go_c1_s2">От 300 тыс 
+       <a href="" class="btn_k ok1 go_c1_s2 d_v1" data-value="От 300 тыс до 1 млн. руб">От 300 тыс 
+        <br>до 1 млн. руб</p>
+       <a href="" class="btn_k ok1 go_c1_s2 d_v1" data-value="От 300 тыс до 1 млн. руб">От 300 тыс 
+        <br>до 1 млн. руб</p>
+       <a href="" class="btn_k ok1 go_c1_s2 d_v1" data-value="От 300 тыс до 1 млн. руб">От 300 тыс 
         <br>до 1 млн. руб</a>
       </div>
       <div class="proc_r" id="d_ok2">
        <h3>Вы уже подали <br>заявление в суд?</h3>
-       <a href="" class="btn_k ok2 go_c1_s3">Заявление подано</a>
-       <a href="" class="btn_k ok2 go_c1_s3">Нет. Ищу юриста</a></div>
+       <a href="" class="btn_k ok2 go_c1_s3 d_v2" data-value="Заявление подано">Заявление подано</a>
+       <a href="" class="btn_k ok2 go_c1_s3 d_v2" data-value="Нет. Ищу юриста">Нет. Ищу юриста</a></div>
       <div class="proc_r" id="d_ok3">
        <h3>Заполните Ваши контактные данные и <br>мы избавим Вас от долгов!</h3>
        <form action="ajax/mail.php" method="post">
         <input type="text" placeholder="Ваше имя" name="name" class="inp_f">
         <input type="text" placeholder="+7 (___) ___-__-__" name="phone" class="inp_f">
         <input type="submit" value="Отправить" class="btn_ok">
-        <input type="hidden" name="frmid" value="Помощь Должник">
+        <input type="hidden" name="frmid" value="ПОМОЧЬ">
+        <input type="hidden" name="form" value="" id="step1_0">
+        <input type="hidden" name="dolh" value="" id="step1_1">
+        <input type="hidden" name="syd" value="" id="step1_2">
        </form>
       </div>
      </div>
@@ -127,22 +130,24 @@
      <div class="steps-wrap">
       <div class="proc_r s-visible" id="k_ok1">
        <h3>Сколько Вам <br>должны?</h3>
-       <a href="" class="btn_k ok1 go_c2_s2">От 300 тыс до <br>1 млн. руб.</a>
-       <a href="" class="btn_k ok1 go_c2_s2">От 1 до <br>
-        5 млн. руб.</a>
-       <a href="" class="btn_k ok1 go_c2_s2 okk">От 5 млн. руб</a>
+       <a href="" class="btn_k ok1 go_c2_s2 d_v3" data-value="От 300 тыс до 1 млн. руб.">От 300 тыс до <br>1 млн. руб.</a>
+       <a href="" class="btn_k ok1 go_c2_s2 d_v3" data-value="От 1 до 5 млн. руб.">От 1 до <br>5 млн. руб.</a>
+       <a href="" class="btn_k ok1 go_c2_s2 okk d_v3" data-value="От 5 млн. руб">От 5 млн. руб</a>
       </div>
       <div class="proc_r" id="k_ok2">
        <h3>Вы уже подали <br>заявление в суд?</h3>
-       <a href="" class="btn_k ok2 go_c2_s3">Заявление подано</a>
-       <a href="" class="btn_k ok2 go_c2_s3">Нет. Ищу юриста</a></div>
+       <a href="" class="btn_k ok2 go_c2_s3 d_v4" data-value="Заявление подано">Заявление подано</a>
+       <a href="" class="btn_k ok2 go_c2_s3 d_v4" data-value="Нет. Ищу юриста">Нет. Ищу юриста</a></div>
       <div class="proc_r" id="k_ok3">
        <h3>Заполните Ваши контактные данные и <br>мы избавим Вас от долгов!</h3>
        <form action="ajax/mail.php" method="post">
         <input type="text" placeholder="Ваше имя" name="name" class="inp_f">
         <input type="text" placeholder="+7 (___) ___-__-__" name="phone" class="inp_f">
         <input type="submit" value="Отправить" class="btn_ok">
-        <input type="hidden" name="frmid" value="Помощь Кредит">
+        <input type="hidden" name="frmid" value="ПОМОЧЬ">
+        <input type="hidden" name="form" value="" id="step2_0">
+        <input type="hidden" name="dolh" value="" id="step2_1">
+        <input type="hidden" name="syd" value="" id="step2_2">
        </form>
       </div>
      </div>
@@ -154,18 +159,17 @@
       <a href="" class="back">Вернуться к списку</a>
      </div>
      <div class="steps-wrap">
-      <div class="proc_r s-visible" id="a_ok1">
-       <h3>Вас уже назначили <br>назначили ?</h3>
-       <a href="" class="btn_k ok2 ook go_c3_s2">Да. Процедура <br>введена</a>
-       <a href="" class="btn_k ok2 ook go_c3_s2">Нет. Назначение <br>планируется</a>
+      <div class="proc_r s-visible" id="a_ok1" >
+       <h3>Вас уже назначили <br>назначили?</h3>
+       <a href="" class="btn_k ok2 ook go_c3_s2 d_v5" data-value="Да. Процедура введена">Да. Процедура <br>введена</a>
+       <a href="" class="btn_k ok2 ook go_c3_s2 d_v5" data-value="Нет. Назначение планируется">Нет. Назначение <br>планируется</a>
       </div>
       <div class="proc_r" id="a_ok2">
        <h3>По какой причине Вам необходима <br>экспертная помощь коллег?</h3>
-       <a href="" class="btn_k ok4 go_c3_s3">Завал дел</a>
-       <a href="" class="btn_k ok4 go_c3_s3">Сроки горят</a>
-       <a href="" class="btn_k ok4 ook go_c3_s3">Сложный
-          <br>заказчик</a>
-       <a href="" class="btn_k ok4 go_c3_s3">Иное</a>
+       <a href="" class="btn_k ok4 go_c3_s3 d_v6" data-value="Завал дел">Завал дел</a>
+       <a href="" class="btn_k ok4 go_c3_s3 d_v6" data-value="Сроки горят">Сроки горят</a>
+       <a href="" class="btn_k ok4 ook go_c3_s3 d_v6" data-value="Сложный заказчик">Сложный<br>заказчик</a>
+       <a href="" class="btn_k ok4 go_c3_s3 d_v6" data-value="Иное">Иное</a>
       </div>
       <div class="proc_r" id="a_ok3">
        <h3>Заполните Ваши контактные данные <br>и мы поможем Вам сохранить <br> кристально чистую репутацию <br>перед заказчиком</h3>
@@ -173,7 +177,10 @@
         <input type="text" placeholder="Ваше имя" name="name" class="inp_f">
         <input type="text" placeholder="+7 (___) ___-__-__" name="phone" class="inp_f">
         <input type="submit" value="Отправить" class="btn_ok">
-        <input type="hidden" name="frmid" value="Помощь Арбитражный управляющий">
+        <input type="hidden" name="frmid" value="ПОМОЧЬ">
+        <input type="hidden" name="form" value="" id="step3_0">
+        <input type="hidden" name="dolh" value="" id="step3_1">
+        <input type="hidden" name="syd" value="" id="step3_2">
        </form>
       </div>
      </div>
@@ -307,7 +314,8 @@
       <input type="text" placeholder="Ваше имя" name="name" class="inp_f">
       <input type="text" placeholder="+7 (___) ___-__-__" name="phone" class="inp_f">
       <input type="submit" value="Отправить" class="btn_g">
-      <input type="hidden" name="frmid" value="Задача Должник">
+      <input type="hidden" name="frmid" value="Блок-предложение:">
+      <input type="hidden" name="form" value="" id="step4_1">
      </form>
     </div>
     </div>
@@ -324,7 +332,8 @@
       <input type="text" placeholder="Ваше имя" name="name" class="inp_f">
       <input type="text" placeholder="+7 (___) ___-__-__" name="phone" class="inp_f">
       <input type="submit" value="Отправить" class="btn_g">
-      <input type="hidden" name="frmid" value="Задача Кредит">
+      <input type="hidden" name="frmid" value="Блок-предложение:">
+      <input type="hidden" name="form" value="" id="step4_2">
      </form>
     </div>
     </div>
@@ -349,7 +358,8 @@
       <input type="text" placeholder="Ваше имя" name="name" class="inp_f">
       <input type="text" placeholder="+7 (___) ___-__-__" name="phone" class="inp_f">
       <input type="submit" value="Отправить" class="btn_g">
-      <input type="hidden" name="frmid" value="Задача Арбитражный управляющий">
+      <input type="hidden" name="frmid" value="Блок-предложение:">
+      <input type="hidden" name="form" value="" id="step4_3">
      </form>
     </div>
     </div>
@@ -533,7 +543,7 @@
      <input type="text" placeholder="Ваше имя" name="name" class="inp_f">
      <input type="text" placeholder="+7 (___) ___-__-__" name="phone" class="inp_f">
      <input type="submit" value="Отправить" class="btn_f">
-     <input type="hidden" name="frmid" value="Остались вопросы?">
+     <input type="hidden" name="frmid" value="Контактная информация">
     </form>
    </div>
  <footer>
@@ -570,7 +580,7 @@
      <input type="text" placeholder="Ваше имя" name="name" class="inp_f">
      <input type="text" placeholder="+7 (___) ___-__-__" name="phone" class="inp_f">
      <input type="submit" value="Отправить" class="btn_p">
-     <input type="hidden" name="frmid" value="обратный звонок">
+     <input type="hidden" name="frmid" value="Обратный звонок">
     </form>
    </div>
    <div class="popap" id="okgo">
