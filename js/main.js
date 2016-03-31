@@ -12,7 +12,10 @@ $(document).ready(function(){
     e.preventDefault();
     $('#zz_pop').arcticmodal();
   });
-
+$('.confbtn').click(function(e) {
+    e.preventDefault();
+    $('#z_poli').arcticmodal();
+  });
   $('.logo_t').click(function(e) {
     e.preventDefault();
   });
