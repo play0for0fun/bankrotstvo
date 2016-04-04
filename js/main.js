@@ -14,7 +14,7 @@ $(document).ready(function(){
   });
 $('.confbtn').click(function(e) {
     e.preventDefault();
-    $('#conf_pop').arcticmodal();
+    $('#z_poli').arcticmodal();
   });
   $('.logo_t').click(function(e) {
     e.preventDefault();
