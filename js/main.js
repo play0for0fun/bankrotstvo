@@ -202,6 +202,7 @@ $('.mst').click(function() {
             $.ajax({type: type, url: url, data: data,
             success : function(){
                 $.arcticmodal('close');$('#okgo').arcticmodal();
+                ga('send','event','submit','submit');yaCounter36555965.reachGoal('submit');
             }
         }); 
         }
