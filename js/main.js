@@ -1,5 +1,6 @@
 $(function(){
 $(document).ready(function(){
+  $('<link rel="stylesheet" href="css/libs_old.min.css"><link rel="stylesheet" href="css/style.min.css"><link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700,700italic&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">').appendTo('head');
   setTimeout(function(){if(!$('body').hasClass('loaded')) {$('body').addClass('loaded');initfullpage()};},3000);
 
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
