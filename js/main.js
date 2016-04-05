@@ -333,7 +333,13 @@ function loopNext () {
 
 });
 $(window).scroll(function() {
-  hfixed();
+  scrl_t=$(window).scrollTop();
+  scrl_l=$(window).scrollLeft();
+   if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+   }else{
+    //$('.fixed-menu-logo').css('top',scrl_t-25);
+  }
+  hfixed(scrl_t,scrl_l);
 });
 function initfullpage(){
    $('#pages').fullpage({
@@ -367,12 +373,11 @@ function initfullpage(){
   }
 var block_h = ['Раздел','Раздел','Раздел','Раздел','Раздел','Раздел','Раздел','Раздел','Раздел','Раздел','Раздел'];
 
-function hfixed(){if($(window).scrollTop()>25){
-   if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-   }else{$('.fixed-menu-logo').css('top',$(window).scrollTop()-25);}
-    
+function hfixed(scrl_t){
+  if(scrl_t>25){    
     $('.fixed-menu-logo').addClass('fix');
     $('.menu').addClass('fix-m');
+    $('.fixed-menu-logo').css('margin-left',-scrl_l)
   }else{
     $('.fixed-menu-logo').removeClass('fix');
     $('.menu').removeClass('fix-m');

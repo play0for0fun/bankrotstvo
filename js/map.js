@@ -10,7 +10,7 @@ function init() {
         scrollwheel: false,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(55.58212951732942,37.7340198), // New York
+        center: new google.maps.LatLng(55.70403622678278,37.7340198), // New York
 
         // How you would like to style the map. 
         // This is where you would paste any style found on Snazzy Maps.
@@ -28,7 +28,7 @@ function init() {
 
     // Let's also add a marker while we're at it
     var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(55.58211441732942,37.58415400000001),
+        position: new google.maps.LatLng(55.70403622678278,37.62615008465582),
         map: map,
         //icon:{url:'img/point.png',origin: new google.maps.Point(0, 0),
         //origin: new google.maps.Point(0, 0),size: new google.maps.Size(90, 128),},

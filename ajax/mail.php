@@ -27,7 +27,7 @@ $subject = 'Заявка Банкротсво';
 $headers.= "MIME-Version: 1.0" . "\r\n";
 $headers.= "Content-type: text/plain; charset=utf-8\r\n";
 
-$to = "bankrotstvovsem@bk.ru";
+$to = "bankrotstvovsem@bk.ru, ban3h.-.xn--80abe5aohbnkjb.xn--p1ai@lptracker.ru";
 //$to = "maddocs@yandex.ru";
 
 $message = "От куда?: $frmid\n\n";
@@ -52,6 +52,7 @@ $message .= "Показ по дополнительным ролевантным
 $message .= "Идентификатор объявления: $creative\n";
 $message .= "Тип соответствия ключа(e-точное/p-фразовое/b-широкое): $matchtype\n";
 $message .= "Гео-положение: $location\n";
+$message .= "<p>ip: {$_COOKIE["ip"]}</p>";
 
 mail ($to,$subject,$message,$headers);
 include("amocrm_api.php");
