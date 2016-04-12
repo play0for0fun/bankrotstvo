@@ -1,4 +1,3 @@
-$(function(){
 $(document).ready(function(){
   $('<link rel="stylesheet" href="css/libs_old.min.css"><link rel="stylesheet" href="css/style.css"><link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700,700italic&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">').appendTo('head');
   setTimeout(function(){if(!$('body').hasClass('loaded')) {$('body').addClass('loaded');initfullpage()};},3000);
@@ -332,27 +331,17 @@ function loopNext () {
 
 
 });
-$(window).scroll(function() {
-  scrl_t=$(window).scrollTop();
-  scrl_l=$(window).scrollLeft();
-   if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-   }else{
-    //$('.fixed-menu-logo').css('top',scrl_t-25);
-  }
-  hfixed(scrl_t,scrl_l);
-});
 function initfullpage(){
    $('#pages').fullpage({
-      scrollBar:true,
       scrollingSpeed: 1000,
-      navigation: true,
-      touchSensitivity: 35,
+      touchSensitivity: 100,
       afterLoad: function(anchorLink, index){
             $(this).find('.animation').addClass('fadeInUp animated');
             $(this).find('.animation2').addClass('fadeInDown animated');
             $(this).find('.animation3').addClass('fadeIn animated');
             if ($(this).hasClass('sec4')|| $(this).hasClass('sec6')) {$('.fixed-menu-logo').addClass('blacked')}else{$('.fixed-menu-logo').removeClass('blacked')}
             if (!$(this).hasClass('sec1')&&!$('#fp-nav').hasClass('animated')) {$('#fp-nav').addClass('fadeIn animated')}
+            if (!$(this).hasClass('sec1')){$('.not-fixed-part').fadeOut()}else{$('.not-fixed-part').fadeIn();}
             if(index == 3 || index == 4){$('.stat').not('.stat-abs').addClass('fix-stat');$('.stat-abs').removeClass('stat-show');}else{$('.stat').not('.stat-abs').removeClass('fix-stat')}
           },
       onLeave: function(index, nextIndex, direction){
@@ -383,6 +372,16 @@ function hfixed(scrl_t){
     $('.fixed-menu-logo').removeClass('fix');
     $('.menu').removeClass('fix-m');
   }}
-});
 
+$(window).scroll(function() {
+  scrl_t=$(window).scrollTop();
+  scrl_l=$(window).scrollLeft();
+  if (scrl_t>0) {
+    $('.not-fixed-part').fadeOut();
+  }else{
+    $('.not-fixed-part').fadeIn();
+  }
+  console.log('test');
+  //hfixed(scrl_t);
+});
   
