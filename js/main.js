@@ -5,6 +5,7 @@ $(document).ready(function(){
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
   if(!$('body').hasClass('loaded')) {$('body').addClass('loaded')};
     $('<style>section,.section{height:800px!important;display:block}.animation,.animation2,.animation3{opacity:1}section.se3_f_n{height:600px!important}.sec6 .middle-wrap{max-height:80%}.sec8 .middle-wrap{max-height: initial;height: initial;}.sec8{height:1500px!important;background-size:cover!important}.sec6{height:1000px!important}</style>').appendTo('head');
+  $('body').addClass('loaded');
   }
 
       
@@ -332,9 +333,7 @@ function loopNext () {
 
 });
 function initfullpage(){
-   $('#pages').fullpage({
-      scrollingSpeed: 1000,
-      touchSensitivity: 100,
+   $('#pages').fullpage({ 
       afterLoad: function(anchorLink, index){
             $(this).find('.animation').addClass('fadeInUp animated');
             $(this).find('.animation2').addClass('fadeInDown animated');
