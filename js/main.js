@@ -215,6 +215,7 @@ $.fn.fullpage.moveTo(2);});
 
 });
 $(window).load(function(){
+  console.log('window.load');
  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
   var nheight = $('#sec10 .middle-wrap').height() + 200 +'px!important';
   console.log(nheight);
@@ -358,6 +359,8 @@ function initfullpage(){
             $('#fp-nav').find('a').each(function(index, el) {
               $('<p>'+block_h[index]+'</p>').appendTo(el);
             });
+            console.log('full-page rendered');
+            k50Tracker.change();
           }
     });
    $('header').addClass('fadeInDown animated');
