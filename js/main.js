@@ -333,7 +333,9 @@ function loopNext () {
 
 });
 function initfullpage(){
-   $('#pages').fullpage({ 
+   $('#pages').fullpage({
+    navigation: true,
+        autoScrolling: false,
       afterLoad: function(anchorLink, index){
             $(this).find('.animation').addClass('fadeInUp animated');
             $(this).find('.animation2').addClass('fadeInDown animated');
