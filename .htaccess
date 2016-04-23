@@ -16,7 +16,7 @@ DirectoryIndex index.php index.html index.htm
 	ExpiresByType text/css "access plus 2 months"
 	
 </IfModule>
-AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/x-font-woff
+##AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/x-font-woff
   <FilesMatch "\.(js|css|xml|gz|woff|html)$">
     Header append Vary: Accept-Encoding
   </FilesMatch>
