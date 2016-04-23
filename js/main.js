@@ -356,6 +356,8 @@ function initfullpage(){
             if (!$(this).hasClass('sec1')&&!$('#fp-nav').hasClass('animated')) {$('#fp-nav').addClass('fadeIn animated')}
             if (!$(this).hasClass('sec1')){$('.not-fixed-part').fadeOut()}else{$('.not-fixed-part').fadeIn();}
             if(index == 3 || index == 4){$('.stat').not('.stat-abs').addClass('fix-stat');$('.stat-abs').removeClass('stat-show');}else{$('.stat').not('.stat-abs').removeClass('fix-stat')}
+            if(index == 1){$('.site-nav.up').hide();}else{$('.site-nav.up').show();} 
+            if(index == 8){$('.site-nav.down').hide();}else{$('.site-nav.down').show();} 
           },
       onLeave: function(index, nextIndex, direction){
             $('.section:nth-child('+nextIndex+')').find('.animation').addClass('fadeInUp animated');

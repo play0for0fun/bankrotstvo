@@ -4,7 +4,7 @@ header,section{min-width:1240px}.sec1,.sec2,section{overflow:hidden}.ramka_h,.sl
 .site-nav:after{position: absolute;width: 80px;height: 100%;top: 0;z-index: -1;}
 .site-nav{
     /* position: fixed; */
-    position: absolute;
+    position: fixed;
     width: 50%;
     max-width: 140px;
     height: 100%;
@@ -71,46 +71,9 @@ header,section{min-width:1240px}.sec1,.sec2,section{overflow:hidden}.ramka_h,.sl
 }
 .site-nav.up{z-index: 20;}
 .site-nav.down{z-index: 20;}
-menu-btn{
-    width: 30px;
-    height: 30px;
-    position: fixed;
-    z-index: 6;
-    background-image: url(../img/menu-btn.png);
-    top: 5px;
-    left: 5px;
-    cursor: pointer;
-    transition: all 0.25s;
-    margin-left: -50px;
+.point_gr, header {
+    position: fixed!important;
 }
-.menu-btn:hover{
-	transform: rotate(-180deg);
-}
-.menu-btn.active{
-    margin-left: 0;
-}
-.menu{
-    position: fixed;
-    top: 0;
-    left: 0;
-    /* width: 300px; */
-    height: 100%;
-    background: rgba(0, 0, 0, 0.35);
-    z-index: 5;
-    padding: 40px 0px;
-    transition: all 0.25s;
-    transform: translateX(-100%);
-}
-.menu.active{
-    transform: translateX(0%);}
-.menu a.menu-a{
-    display: block;
-    color: white;
-    font-size: 20px;
-    padding: 5px 25px 5px 5px;
-    transition: all 0.25s;
-    background: transparent;
-}
-.menu a.menu-a:hover{
-    background: rgba(255,255,255,0.1);
+.menu_btn {
+    margin-left: -28px!important;
 }
