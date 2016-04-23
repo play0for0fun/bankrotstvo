@@ -73,6 +73,7 @@ header,section{min-width:1240px}.sec1,.sec2,section{overflow:hidden}.ramka_h,.sl
 .site-nav.down{z-index: 20;}
 .point_gr, header {
     position: fixed!important;
+    z-index: 21;
 }
 .menu_btn {
     margin-left: -28px!important;
