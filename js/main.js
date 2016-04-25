@@ -36,7 +36,7 @@ $('.site-nav.up').click(function(e) {
   });
 $('.confbtn').click(function(e) {
     e.preventDefault();
-    $('#z_poli').arcticmodal();
+    $('#conf_pop').arcticmodal();
   });
   $('.logo_t').click(function(e) {
     e.preventDefault();
