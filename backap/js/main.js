@@ -1,28 +1,12 @@
 $(document).ready(function(){
-  $('<link rel="stylesheet" href="css/libs_old.min.css"><link rel="stylesheet" href="css/style.css"><link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700,700italic&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">').appendTo('head');
+  $('<link rel="stylesheet" href="css/head.css"><link rel="stylesheet" href="css/libs_old.min.css"><link rel="stylesheet" href="css/style.css"><link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700,700italic&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">').appendTo('head');
   setTimeout(function(){if(!$('body').hasClass('loaded')) {$('body').addClass('loaded');initfullpage()};},3000);
-
-var isMobile = false; 
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-isMobile = true;
-}
-
 
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
   if(!$('body').hasClass('loaded')) {$('body').addClass('loaded')};
-    $('<style>section,.section{height:800px!important;display:block}.animation,.animation2,.animation3{opacity:1}.site-nav.down,.site-nav.up{display:none!important}section.se3_f_n{height:600px!important}.sec6 .middle-wrap{max-height:80%}.sec8 .middle-wrap{max-height: initial;height: initial;}.sec8{height:1500px!important;background-size:cover!important}.sec6{height:1000px!important}</style>').appendTo('head');
+    $('<style>section,.section{height:800px!important;display:block}.animation,.animation2,.animation3{opacity:1}section.se3_f_n{height:600px!important}.sec6 .middle-wrap{max-height:80%}.sec8 .middle-wrap{max-height: initial;height: initial;}.sec8{height:1500px!important;background-size:cover!important}.sec6{height:1000px!important}</style>').appendTo('head');
   $('body').addClass('loaded');
     
-  }
-
-if (isMobile == true) {
-  $('.animation').addClass('animated');
-    $('<style>section,.section{height:800px!important;display:block}.animation,.animation2,.animation3*{opacity:1;transition:0s all 0s!important;animation-duration:0s!important;animation-delay:0s!important}section.se3_f_n{height:600px!important}.sec6 .middle-wrap{max-height:80%}.sec8 .middle-wrap{max-height: initial;height: initial;}.sec8{height:1500px!important;background-size:cover!important}.sec6{height:1000px!important}</style>').appendTo('head');
-}
-
-    //анимация
-  if (isMobile != true) {
-    setTimeout(function(){$('.animation').viewportChecker({classToAdd: 'animated'})},1000); 
   }
 
 $('.site-nav.down').click(function(e) {

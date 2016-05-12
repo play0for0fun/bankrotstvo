@@ -7,22 +7,22 @@ form .btn_f,form .btn_p{-webkit-box-shadow:#874d13 0 2px 0;box-shadow:#874d13 0 
 @font-face{font-family:MuseoSansCyrl;src:url(../fonts/exljbris_-_museo_cyrl_300-webfont.eot);src:url(../fonts/exljbris_-_museo_cyrl_300-webfont.eot?#iefix) format('embedded-opentype'),url(../fonts/exljbris_-_museo_cyrl_300-webfont.woff2) format('woff2'),url(../fonts/exljbris_-_museo_cyrl_300-webfont.woff) format('woff'),url(../fonts/exljbris_-_museo_cyrl_300-webfont.ttf) format('truetype'),url(../fonts/exljbris_-_museo_cyrl_300-webfont.svg#museo_cyrl300) format('svg');font-weight:300;font-style:normal}
 @font-face{font-family:MuseoSansCyrl;src:url(../fonts/exljbris_-_museo_cyrl_500-webfont.eot);src:url(../fonts/exljbris_-_museo_cyrl_500-webfont.eot?#iefix) format('embedded-opentype'),url(../fonts/exljbris_-_museo_cyrl_500-webfont.woff2) format('woff2'),url(../fonts/exljbris_-_museo_cyrl_500-webfont.woff) format('woff'),url(../fonts/exljbris_-_museo_cyrl_500-webfont.ttf) format('truetype'),url(../fonts/exljbris_-_museo_cyrl_500-webfont.svg#museo_cyrl500) format('svg');font-weight:500;font-style:normal}
 @font-face{font-family:MuseoSansCyrl;src:url(../fonts/exljbris_-_museo_cyrl_700-webfont.eot);src:url(../fonts/exljbris_-_museo_cyrl_700-webfont.eot?#iefix) format('embedded-opentype'),url(../fonts/exljbris_-_museo_cyrl_700-webfont.woff2) format('woff2'),url(../fonts/exljbris_-_museo_cyrl_700-webfont.woff) format('woff'),url(../fonts/exljbris_-_museo_cyrl_700-webfont.ttf) format('truetype'),url(../fonts/exljbris_-_museo_cyrl_700-webfont.svg#museo_cyrl700) format('svg');font-weight:700;font-style:normal}
-*{margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-text-size-adjust:none;}
+*{margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box}
 :not(a)::after,:not(a)::before,:not(br)::after,:not(br)::before,:not(img)::after,:not(img)::before,:not(span)::after,:not(span)::before{content:" ";display:block;width:100%;height:0;clear:both}
 a::after,a::before,br::after,br::before,img::after,img::before,span::after,table::after,table::before,td::after,td::before,tr::after,tr::before{content:none}
 .animation,.animation2,.animation3{opacity:0;-webkit-animation-delay:.5s;animation-delay:.5s}
 .middle-wrap{position:absolute;width:100%;height:100%;max-height:600px;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);top:50%;z-index:2;clear:both}
-.fixed-menu-logo{float:left;/* position: absolute; *//* left: 0; *//* top: 0; */width: 20%;}
+.fixed-menu-logo{float:left}
 .fixed-menu-logo .stat{padding-top:95px;float:none;display:none}
 .fixed-menu-logo .stat.fix-stat{position:static;margin-left:0;display:block}
 .fixed-menu-logo.fix{position:absolute;position:fixed;top:0;z-index:10;float:none}
-.not-fixed-part{float:right;width:860px;/* position: absolute; *//* right: 0; */}
+.not-fixed-part{float:right;width:860px}
 .point_gr p,.ur_ag{float:left;text-align:left}
 section{position:relative;z-index:2;height:100vh!important}
 .sec1{background:url(../img/bg_sec1.jpg) top center no-repeat;height:1100px}
 .ur_ag{font-family:MuseoSansCyrl;font-size:20px;line-height:22px;font-weight:100;margin-left:99px;margin-top:34px;letter-spacing:.4px}
 .fone_gr a,.fone_gr p{line-height:22px;font-weight:300;font-family:MuseoSansCyrl}
-.fone_gr{float:right;text-align:left;margin-right:110px;margin-top:20px;/* position: absolute; *//* right: 110px; *//* top: 20px; */}
+.fone_gr{float:right;text-align:left;margin-right:110px;margin-top:20px}
 .fone_gr p{font-size:24px;letter-spacing:.8px;margin-bottom:7px;cursor:pointer}
 .fone_gr a{color:#f9a859;font-size:16px;letter-spacing:.4px;border-bottom:1px dotted #f9a859;-webkit-transition:all .25s;transition:all .25s}
 .sec1 h2,.sec1 h2 span,.sec1 h3{font-weight:700}
@@ -163,9 +163,9 @@ section{position:relative;z-index:2;height:100vh!important}
 .map{height:925px;position:relative}
 .forma,.menu,.point_m{position:absolute}
 .point_m{width:90px;height:128px;top:320px;left:129px;background:url(../img/point.png) 50% 0 no-repeat}
-.forma{width:391px;top:50%;padding: 25px 45px;background:rgba(27,28,34,.85098);left:50%;margin-left:136px;margin-top:-325px;z-index:3;}
+.forma{width:391px;top:50%;padding:25px 45px;background:rgba(27,28,34,.85098);left:50%;margin-left:136px;margin-top:-325px;z-index:3}
 .forma h3{font-family:MuseoSansCyrl;font-size:25px;letter-spacing:1.1px;padding-bottom:10px;background:url(../img/form_line.png) 0 100% no-repeat}
-.forma p{font-family:'Noto Serif';font-size:17px;font-weight:400;padding-left: 35px;letter-spacing:.3px;padding-bottom:6px;}
+.forma p{font-family:'Noto Serif';font-size:17px;font-weight:400;padding-left:40px;letter-spacing:.3px;padding-bottom:6px}
 .forma h2,form .btn_f{font-family:MuseoSansCyrl}
 .forma p span{font-size:25px;letter-spacing:.5px}
 .forma div{width:284px;height:6px;margin-top:10px;background:url(../img/line_form.png) 50% 0 no-repeat}
@@ -178,11 +178,11 @@ form .btn_f{width:301px;height:49px;margin-top:5px;color:#fff;font-size:16px;lin
 .line_menu a,.logo_foot,.logo_gs{font-family:MuseoSansCyrl;color:#fff;text-align:left}
 .line_menu a,.menu_btn{-webkit-transition:all .25s;display:block}
 .btn_f:hover{background:url(../img/btn_f.png) center no-repeat #966d46}
-.logo_foot{height:66px;/* font-size:16px; *//* float:left; *//* padding-left:129px; *//* margin-left: 85px; *//* padding-top:13px; *//* font-weight:500; */background: url(../img/logo.png) no-repeat;background-size:contain;display: inline-block;vertical-align: top;width: 120px;word-spacing: 0;/* height: 121px; */}
+.logo_foot{height:66px;font-size:16px;float:left;padding-left:129px;margin-left:94px;padding-top:13px;font-weight:500;background:url(../img/logo.png) no-repeat;background-size:contain}
 .confbtn,.foot_conf{font-weight:300;font-size:16px}
 .foot_conf{margin-top:12px;float:left}
 .confbtn{display:block;border-bottom:1px dashed #fff}
-.logo_gs{font-size:16px;font-weight:500;height:42px;/* float:right; */padding-right:224px;/* margin-right: 35px; */margin-top:8px;padding-top:2px;background:url(../img/logo_gs.png) 100% 0 no-repeat;display: inline-block;vertical-align: top;word-spacing: 0;}
+.logo_gs{font-size:16px;font-weight:500;height:42px;float:right;padding-right:224px;margin-right:41px;margin-top:8px;padding-top:2px;background:url(../img/logo_gs.png) 100% 0 no-repeat}
 .menu.fix-m{padding-top:34px}
 .close{width:40px;height:40px;float:left;background:url(../img/close.png) 50% 50% no-repeat;margin-left:-8px;margin-top:-13px}
 .line_menu{border-left-width:1px;border-left-style:solid;border-left-color:#6a6c6e;margin-top:47px;margin-left:10px}
@@ -194,7 +194,7 @@ form .btn_f{width:301px;height:49px;margin-top:5px;color:#fff;font-size:16px;lin
 #fp-nav p,.logo_t{font-family:MuseoSansCyrl;text-align:left;float:left}
 .clear{clear:both}
 h1,h2,h3,h4,h5{font-size:1em;font-weight:inherit}
-body{color:#fff;font-family:MuseoSansCyrl;height: 100%;min-height: 100%;}
+body{color:#fff;font-family:MuseoSansCyrl}
 a{text-decoration:none;color:inherit;outline:0!important}
 .blacked .menu_btn{-webkit-filter:invert(100%)}
 .blacked .logo_t{color:#242529}
@@ -202,7 +202,7 @@ a{text-decoration:none;color:inherit;outline:0!important}
 .logo_t,.proc_fon .anti_h{-webkit-transition:all .25s}
 .menu_btn:hover{-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}
 header{top:25px;width:100%;z-index:5}
-.logo_t{height:80px;/* display:block; */margin-left:17px;margin-top:0;/* font-size:20px; */float: left;left: 0;/* line-height:21px; *//* font-weight:700; *//* padding-left:77px; *//* padding-top:10px; */-webkit-transition:all .25s;transition:all .25s;width:218px;background: url(../img/logo.png) no-repeat left;background-size:contain;}
+.logo_t{height:80px;display:block;margin-left:17px;margin-top:0;font-size:20px;line-height:21px;font-weight:700;padding-left:77px;padding-top:10px;-webkit-transition:all .25s;transition:all .25s;width:218px;background:url(../img/logo.png) no-repeat;background-size:contain}
 .logo_t span{font-weight:500}
 .point_gr{top:470px;left:-54px}
 .point_gr a{display:block;clear:both}
@@ -255,7 +255,7 @@ header{top:25px;width:100%;z-index:5}
 .kto_arb.active,.kto_arb:hover{color:#f9a859;font-weight:700;background:url(../img/arb_imh.png) 25px 22px no-repeat,url(../img/kto_im.png) 50% 0 no-repeat}
 .dinam{float:left;padding-left:64px;width:868px}
 .dinam.st2,.dinam.st3{display:none}
-.se3_f_n .dinam,.sec3 .dinam{position:absolute;top:0;left: 302px;}
+.se3_f_n .dinam,.sec3 .dinam{position:absolute;top:0;left:302px}
 .se3_f_n .dinam[data-block="1"]{padding-top:20px}
 .se3_f_n .dinam[data-block="3"]{padding-top:16px;display:none}
 .se3_f_n .dinam[data-block="2"]{padding-top:30px;display:none}
@@ -300,7 +300,7 @@ header{top:25px;width:100%;z-index:5}
 .voz_t{font-size:19px;letter-spacing:.8px;padding-bottom:6px;margin-bottom:48px;margin-left:5px;padding-left:73px;background:url(../img/shchit_im.png) 0 4px no-repeat;margin-top:70px}
 .arbit,.form_gr h2,form .btn_g{font-family:MuseoSansCyrl}
 .arbit,.st3 .vre{padding-bottom:30px}
-.arbit{color:#242529;font-size:21px;line-height:22px;margin-left:3px;letter-spacing: 0px;background:url(../img/arbit_tit.png) 1px 100% no-repeat;width: 90%;height: 96px;overflow: visible;}
+.arbit{color:#242529;font-size:21px;line-height:22px;margin-left:3px;letter-spacing:.7px;background:url(../img/arbit_tit.png) 1px 100% no-repeat}
 .st3 .vre{margin-bottom:10px}
 .st3 .osv{margin-top:10px;letter-spacing:1.3px;padding-bottom:10px}
 .st3 .osv1{margin-left:2px}
@@ -316,7 +316,7 @@ header{top:25px;width:100%;z-index:5}
 .se3_f{height:330px;background:url(../img/bg_sec3_fonfs.jpg) 50% 50% no-repeat}
 .se3_f_plaw{width:50%;right:50%;height:100%;top:0;margin-right:284px;background:#14161D}
 .se3_f .middle-wrap{padding-top:211px}
-.form_gr{float:right;padding-top:0;margin-top: 64px;}
+.form_gr{float:right;padding-top:0;margin-top:64px}
 .form_gr h2{font-size:28px;line-height:45px;font-weight:700;float:left;margin-right:62px;margin-top:0;letter-spacing:.7px;padding-bottom:38px;background:url(../img/titl_din.png) 1px 100% no-repeat}
 .form_gr form{float:right;width:301px;margin-right:0;margin-top:0}
 form .btn_g{margin-top:5px;color:#fff;font-size:16px;line-height:46px;font-style:normal;text-align:center;letter-spacing:.6px;padding-left:0;border:none;cursor:pointer;width:301px;height:49px;-webkit-transition:all .25s;transition:all .25s;-webkit-box-shadow:#874d13 1px 1.7px 0;box-shadow:#874d13 1px 1.7px 0;background:url(../img/btn_f.png) 50% 50% no-repeat #bc7c3d}
@@ -326,7 +326,7 @@ form input,form textarea{width:301px;border:1px solid #000;font-family:'Noto Ser
 form{margin-top:10px}
 form textarea{resize:none;height:60px}
 form input{height:49px;margin-top:8px}
-footer{padding-top:0;padding-bottom:0;background-color:#242529;bottom:0;width:100%;z-index:4;text-align:center;font-size: 0;/* word-spacing: 160px; */}
+footer{padding-top:0;padding-bottom:0;background-color:#242529;bottom:0;width:100%;z-index:4;text-align:center}
 .popap{text-align:center;width:357px;height:346px;padding-top:23px;background:url(../img/pop_fon.png) 50% 50% no-repeat #f0f0f1}
 #conf_pop{width:800px;background:#242529;text-align:left;padding:28px;height:inherit}
 .proc_r form .btn_ok,form .btn_p{text-align:center;cursor:pointer}
@@ -430,7 +430,7 @@ form .btn_p{width:301px;height:49px;margin-top:14px;color:#fff;font-size:16px;li
 .sec1 h2{font-size:32px;background:url(../img/tittle_im.png) 37px 0 no-repeat}
 .sec1 h2 span{font-size:50px;padding-left:24px;margin-left:-6px;margin-right:-6px;line-height:45px}
 .black:after{background:rgba(0,0,0,.15)!important;-webkit-transition:all .25s;transition:all .25s}
-.menu_btn{width:30px;height:30px;position:fixed;background-image:url(../img/menu-btn.png);left:15px;cursor:pointer;-webkit-transition:all .25s;transition:all .25s;margin-left:-50px;/* opacity: 1!important; *//* z-index: 100; */top: 0;}
+.menu_btn{width:30px;height:30px;position:fixed;background-image:url(../img/menu-btn.png);left:15px;cursor:pointer;-webkit-transition:all .25s;transition:all .25s;margin-left:-50px}
 .menu_btn:hover{-webkit-transform:rotate(-180deg);-ms-transform:rotate(-180deg);transform:rotate(-180deg)}
 .menu_btn.active{margin-left:0}
 .menu_btn.as-close{background-image:url(../img/close-menu.png);-webkit-transform:rotate(-360deg);-ms-transform:rotate(-360deg);transform:rotate(-360deg)}
@@ -438,9 +438,8 @@ form .btn_p{width:301px;height:49px;margin-top:14px;color:#fff;font-size:16px;li
 .menu.active{-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}
 .menu a.menu-a{display:block;color:#fff;height:36px;font-size:17px;padding:0 25px 0 15px;-webkit-transition:all .25s;transition:all .25s;background:0 0;width:280px;line-height:36px}
 .menu a.menu-a:hover{background:rgba(255,255,255,.1)}
-.foot_conf{font-size:16px;font-weight:300;vertical-align:top;display: inline-block!important;float: none!important;vertical-align: top;word-spacing: 0;margin: 12px 160px 0px;}
+.foot_conf{margin-top:12px;font-size:16px;font-weight:300;vertical-align:top;display:inline-block;float:none}
 .confbtn{display:inline-block;border-bottom:1px dashed #fff;font-size:16px;font-weight:300;margin-bottom:10px}
 .popap{display:inline-block;text-align:center;width:357px;height:346px;padding-top:23px;background:url(../img/pop_fon.png) 50% 50% no-repeat #f0f0f1}
 #conf_pop{width:800px;background:#242529;text-align:left;padding:28px;height:inherit}
 #conf_pop p{margin:10px 0}
-.fofo{}
