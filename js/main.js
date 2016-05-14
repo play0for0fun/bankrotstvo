@@ -386,6 +386,7 @@ function loopNext () {
 
 });
 function initfullpage(){
+  if (isMobile != true) {
    $('#pages').fullpage({ 
     autoScrolling: false,
       afterLoad: function(anchorLink, index){
@@ -422,6 +423,7 @@ function initfullpage(){
    $('header').addClass('fadeInDown animated');
    setTimeout(function(){$('header').removeClass('fadeInDown animated');},1100);
   }
+}
 var block_h = ['Раздел','Раздел','Раздел','Раздел','Раздел','Раздел','Раздел','Раздел','Раздел','Раздел','Раздел'];
 
 function hfixed(scrl_t){
