@@ -451,8 +451,8 @@ $(window).scroll(function() {
   }
 
   b_srolltop = $('body').scrollTop();
-          console.log(b_srolltop);
-          console.log($('.sec3').offset().top);
+          //console.log(b_srolltop);
+          //console.log($('.sec3').offset().top);
             
           //if(isMobile != true){
 
