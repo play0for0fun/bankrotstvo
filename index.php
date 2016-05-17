@@ -107,7 +107,7 @@
        <a href="" class="btn_k ok2 go_c1_s3 d_v2" data-value="Заявление подано">Заявление подано</a>
        <a href="" class="btn_k ok2 go_c1_s3 d_v2" data-value="Нет. Ищу юриста">Нет. Ищу юриста</a></div>
       <div class="proc_r" id="d_ok3">
-       <h3>Заполните Ваши контактные данные и <br>мы вернем Ваши деньги!</h3>
+       <h3>Заполните Ваши контактные данные и <br>мы избавим Вас от долгов!</h3>
        <form action="ajax/mail.php" method="post">
         <input type="text" placeholder="Ваше имя" name="name" class="inp_f">
         <input type="text" placeholder="+7 (___) ___-__-__" name="phone" class="inp_f">
@@ -138,7 +138,7 @@
        <a href="" class="btn_k ok2 go_c2_s3 d_v4" data-value="Заявление подано">Заявление подано</a>
        <a href="" class="btn_k ok2 go_c2_s3 d_v4" data-value="Нет. Ищу юриста">Нет. Ищу юриста</a></div>
       <div class="proc_r" id="k_ok3">
-       <h3>Заполните Ваши контактные данные и <br>мы избавим Вас от долгов!</h3>
+       <h3>Заполните Ваши контактные данные и <br>мы вернем Ваши деньги!</h3>
        <form action="ajax/mail.php" method="post">
         <input type="text" placeholder="Ваше имя" name="name" class="inp_f">
         <input type="text" placeholder="+7 (___) ___-__-__" name="phone" class="inp_f">

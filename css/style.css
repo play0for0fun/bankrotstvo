@@ -332,7 +332,8 @@ footer{padding-top:0;padding-bottom:0;background-color:#242529;bottom:0;width:10
 .proc_r form .btn_ok,form .btn_p{text-align:center;cursor:pointer}
 #conf_pop p{margin:10px 0}
 #okgo{background:#f0f0f1;width:353px;height:inherit;border:1px solid #DE8D4C;outline:#f0f0f1 solid 2px;color:#000;font-size:24px;padding-bottom:23px}
-.popap h2{color:#FFF;font-size:20px;line-height:35px;font-weight:700;letter-spacing:.4px}
+.popap h2{color: #242529;font-size:20px;line-height:35px;font-weight:700;letter-spacing:.4px;}
+#conf_pop h2{color:#FFF}
 .back,.popap h2 span{font-family:'Noto Serif'}
 .popap h2 span{color:#242529;font-size:16px;font-style:italic;font-weight:400;line-height:19px;margin-top:1px;letter-spacing:.3px}
 .cent_item,form .btn_p{font-family:MuseoSansCyrl}
