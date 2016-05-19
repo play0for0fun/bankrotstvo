@@ -456,14 +456,14 @@ $(window).scroll(function() {
             
           //if(isMobile != true){
 
-            if(b_srolltop >= $('.sec3').offset().top && b_srolltop< $('.se3_f_n').offset().top){$('.stat').not('.stat-abs').addClass('fix-stat');$('.stat-abs').removeClass('stat-show');}else{$('.stat').not('.stat-abs').removeClass('fix-stat')}
+            if(b_srolltop >= $('.sec3').offset().top && b_srolltop<= $('.se3_f_n').offset().top){$('.stat').not('.stat-abs').addClass('fix-stat');$('.stat-abs').removeClass('stat-show');}else{$('.stat').not('.stat-abs').removeClass('fix-stat')}
           //}
 
 
             if(b_srolltop < $('.sec2').offset().top) {$('.site-nav.up').hide();}else{$('.site-nav.up').show();} 
             
             if(b_srolltop >= $('#sec11').offset().top){$('.site-nav.down').hide();}else{$('.site-nav.down').show();}
-            if(b_srolltop >= $('.sec3').offset().top && b_srolltop< $('.sec5').offset().top){$('.site-nav.down').addClass('black');}else{$('.site-nav.down').removeClass('black');}
+            if(b_srolltop >= $('.sec3').offset().top && b_srolltop<= $('.se3_f_n').offset().top){$('.site-nav.down').addClass('black');}else{$('.site-nav.down').removeClass('black');}
             
             if(b_srolltop >= $('.sec6').offset().top && b_srolltop< $('.sec7').offset().top){$('.site-nav.up,.site-nav.down').addClass('black');}else{$('.site-nav.down,.site-nav.up').removeClass('black');} 
             if(b_srolltop < $('.sec2').offset().top){$('.site-nav.down').addClass('animation4');}else{$('.site-nav.down').removeClass('animation4');}
