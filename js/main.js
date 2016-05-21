@@ -406,7 +406,7 @@ isMobile = true;
             //$('.section:nth-child('+nextIndex+')').find('.animation').addClass('fadeInUp animated');
             //$('.section:nth-child('+nextIndex+')').find('.animation2').addClass('fadeInDown animated');
             //$('.section:nth-child('+nextIndex+')').find('.animation3').addClass('fadeIn animated');
-            //if (direction=='down'&&$(this).next().hasClass('sec4')|| direction=='down'&&$(this).next().hasClass('sec6')||direction=='up'&&$(this).prev().hasClass('sec4')|| direction=='up'&&$(this).prev().hasClass('sec6')) {$('.fixed-menu-logo').addClass('blacked')}else{$('.fixed-menu-logo').removeClass('blacked')}
+            if (direction=='down'&&$(this).next().hasClass('sec4')|| direction=='down'&&$(this).next().hasClass('sec6')||direction=='up'&&$(this).prev().hasClass('sec4')|| direction=='up'&&$(this).prev().hasClass('sec6')) {$('.fixed-menu-logo').addClass('blacked')}else{$('.fixed-menu-logo').removeClass('blacked')}
           },
       afterRender: function(){
             $('#fp-nav').find('a').each(function(index, el) {
