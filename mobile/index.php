@@ -49,7 +49,7 @@
             </div>
             <div class="kalk_v" id="v_1_3">
                 <h3>Заполните Ваши контактные<br> данные и мы избавим Вас от<br> долгов!</h3>
-                <form action="ajax/mail.php">
+                <form action="ajax/mail.php" method="post">
                     <input type="text" name="name" placeholder="Ваше имя">
                     <input type="text" name="phone" placeholder="+7 (___) ___-__-__">
                     <input type="hidden" name="frmid" value="ПОМОЧЬ">
@@ -75,7 +75,7 @@
             </div>
             <div class="kalk_v" id="v_2_3">
                 <h3>Заполните Ваши контактные<br> данные и мы избавим Вас от<br> долгов!</h3>
-                <form action="ajax/mail.php">
+                <form action="ajax/mail.php" method="post">
                     <input type="text" name="name" placeholder="Ваше имя">
                     <input type="text" name="phone" placeholder="+7 (___) ___-__-__">
                     <input type="hidden" name="frmid" value="ПОМОЧЬ">
@@ -102,7 +102,7 @@
             </div>
             <div class="kalk_v" id="v_3_3">
                 <h3>Заполните Ваши контактные<br> данные и мы поможем Вам<br> сохранить кристально чистую<br> репутацию перед заказчиком</h3>
-                <form action="ajax/mail.php">
+                <form action="ajax/mail.php" method="post">
                     <input type="text" name="name" placeholder="Ваше имя">
                     <input type="text" name="phone" placeholder="+7 (___) ___-__-__">
                     <input type="hidden" name="frmid" value="ПОМОЧЬ">
@@ -199,7 +199,7 @@
 <section class="sec4">
     <div class="wrap">
         <h2>Получите консультацию от<br> профессионального Юриста<br> прямо сейчас!</h2>
-        <form action="ajax/mail.php">
+        <form action="ajax/mail.php" method="post">
             <input type="text" name="name" placeholder="Ваше имя">
             <input type="text" name="phone" placeholder="+7 (___) ___-__-__">
             <button type="submit" value="Отправить">Отправить</button>
@@ -268,7 +268,7 @@
         </div>
         <div class="vop_form">
             <h3>Остались вопросы?<br> Пишите</h3>
-            <form action="ajax/mail.php">
+            <form action="ajax/mail.php" method="post">
                 <input type="text" name="name" placeholder="Ваше имя">
                 <input type="text" name="phone" placeholder="+7 (___) ___-__-__">
                 <textarea name="mess" placeholder="Вопрос"></textarea>
