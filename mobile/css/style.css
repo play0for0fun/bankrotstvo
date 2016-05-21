@@ -1453,3 +1453,13 @@ footer p {
     border: 1px solid #d0cece;
 }
 form .btn_p{margin-top:14px;line-height:46px;font-style:normal;border:none;-webkit-transition:all .25s;transition:all .25s;background:url(../img/btn_im.png) 50% 50% no-repeat #bc7c3d;display: inline-block;font-size: 18px;font-weight: 500;padding-left: 20px;background-color: rgb( 188, 124, 61 );box-shadow: 1px 1.732px 0px 0px rgb( 135, 77, 19 );width: 350px;height: 57px;background-image: url(../img/btn_im.png);background-position: center;color: white;padding: 0;letter-spacing: 0.6px;position: relative;}
+#okgo {
+    background: #f0f0f1;
+    width: 353px;
+    height: inherit;
+    border: 1px solid #DE8D4C;
+    outline: #f0f0f1 solid 2px;
+    color: #000;
+    font-size: 24px;
+    padding-bottom: 23px;
+}
