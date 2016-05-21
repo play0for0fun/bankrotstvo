@@ -5,9 +5,8 @@
  <title>банкротствовсем.рф</title>
  <meta id="viewport" name="viewport" content="width=480">
  <link rel="shortcut icon" href="img/favicon-1.png" type="image/x-icon">
-  <link href='https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
- <link href="css/a_style.css" rel="stylesheet" type='text/css'>
  <link href="css/normalize.min.css" rel="stylesheet" type='text/css'>
+  <script type="text/javascript">if (screen.width > 699) {document.location = "../"+document.location.search;}</script>
  </head>
 <body>
 <header>
@@ -21,23 +20,23 @@
     <div class="wrap">
         <h2>Помогите нам <br>помочь Вам!<br><span>В качестве кого вы выступаете<br>в процедуре банкротства</span>
         </h2>
-        <div class="bank_gr">
-            <a href="" class="bank1"><span>Должник</span></a>
-            <a href="" class="bank2"><span>Кредитор</span></a>
-            <a href="" class="bank3"><span>Арбитражный <br>управляющий</span></a>
+        <div class="bank_gr active">
+            <a href="" class="bank1 pf1" id="go_c1_s1" data-value="Должник"><span>Должник</span></a>
+            <a href="" class="bank2 pf1" id="go_c2_s1" data-value="Кредитор"><span>Кредитор</span></a>
+            <a href="" class="bank3 pf1" id="go_c3_s1" data-value="Арбитражный управляющий"><span>Арбитражный <br>управляющий</span></a>
         </div>
-        <!--<div class="kalk_gr1">
-            <p class="kalk"><span>Должник</span><a href=""></a></p>
+        <div class="kalk_gr1 kalk_gr">
+            <p class="kalk"><span>Должник</span><a href="" class="back"></a></p>
             <div class="kalk_v" id="v_1_1">
                 <h3>Сколько Вам должны?</h3>
-                <a href="">От 300 тыс <br>до 1 млн. руб.</a>
-                <a href="">От 300 тыс <br>до 1 млн. руб.</a>
-                <a href="">От 300 тыс <br>до 1 млн. руб.</a>
+                <a href="" class="v_1_1">От 300 тыс <br>до 1 млн. руб.</a>
+                <a href="" class="v_1_1">От 300 тыс <br>до 1 млн. руб.</a>
+                <a href="" class="v_1_1">От 300 тыс <br>до 1 млн. руб.</a>
             </div>
             <div class="kalk_v" id="v_1_2">
                 <h3>Вы уже подали <br>заявлениев суд?</h3>
-                <a href="">Заявление подано</a>
-                <a href="">Нет. Ищу юриста</a>
+                <a href="" class="v_1_2 op">Заявление подано</a>
+                <a href="" class="v_1_2 op">Нет. Ищу юриста</a>
             </div>
             <div class="kalk_v" id="v_1_3">
                 <h3>Заполните Ваши контактные<br> данные и мы избавим Вас от<br> долгов!</h3>
@@ -48,19 +47,41 @@
                 </form>
             </div>
         </div>
-        <div class="kalk_gr3">
-            <p class="kalk"><span>Арбитражный <br>управляющий</span><a href=""></a></p>
+        <div class="kalk_gr2 kalk_gr">
+            <p class="kalk"><span>Кредитор</span><a href="" class="back"></a></p>
+            <div class="kalk_v" id="v_2_1">
+                <h3>Сколько Вам должны?</h3>
+                <a href="" class="v_2_1">От 300 тыс <br>до 1 млн. руб</a>
+                <a href="" class="v_2_1">От 1 до <br>5 млн. руб.</a>
+                <a href="" class="op v_2_1">От 5 млн. руб</a>
+            </div>
+            <div class="kalk_v" id="v_2_2">
+                <h3>Вы уже подали <br>заявлениев суд?</h3>
+                <a href="" class="op v_2_2">Заявление подано</a>
+                <a href="" class="op v_2_2">Нет. Ищу юриста</a>
+            </div>
+            <div class="kalk_v" id="v_2_3">
+                <h3>Заполните Ваши контактные<br> данные и мы избавим Вас от<br> долгов!</h3>
+                <form action="">
+                    <input type="text" name="name" placeholder="Ваше имя">
+                    <input type="text" name="phone" placeholder="+7 (___) ___-__-__">
+                    <button type="submit" value="Отправить">Отправить</button>
+                </form>
+            </div>
+        </div>
+        <div class="kalk_gr3 kalk_gr">
+            <p class="kalk"><span>Арбитражный <br>управляющий</span><a href="" class="back"></a></p>
             <div class="kalk_v" id="v_3_1">
                 <h3>Вас уже назначили?</h3>
-                <a href="">Да. Процедура<br> введена</a>
-                <a href="">Нет. Назначение<br>планируется</a>
-            </div>            
+                <a href="" class="v_3_1">Да. Процедура<br> введена</a>
+                <a href="" class="v_3_1">Нет. Назначение<br>планируется</a>
+            </div>     
             <div class="kalk_v" id="v_3_2">
                 <h3>По какой причине Вам<br> необходима <br>экспертная помощь коллег?</h3>
-                <a href="">Завал дел</a>
-                <a href="">Сроки горят</a>
+                <a href="" class="v_3_2">Завал дел</a>
+                <a href="" class="v_3_2">Сроки горят</a>
                 <a href="" class="op">Сложный<br>заказчик</a>
-                <a href="">Иное</a>
+                <a href="" class="v_3_2">Иное</a>
             </div>
             <div class="kalk_v" id="v_3_3">
                 <h3>Заполните Ваши контактные<br> данные и мы поможем Вам<br> сохранить кристально чистую<br> репутацию перед заказчиком</h3>
@@ -71,39 +92,37 @@
                 </form>
             </div>
         </div>
-        <div class="kalk_gr2">
-            <p class="kalk"><span>Кредитор</span><a href=""></a></p>
-            <div class="kalk_v" id="v_2_1">
-                <h3>Сколько Вам должны?</h3>
-                <a href="">От 300 тыс <br>до 1 млн. руб</a>
-                <a href="">От 1 до <br>5 млн. руб.</a>
-                <a href="" class="op">От 5 млн. руб</a>
-            </div>
-
-            <div class="kalk_v" id="v_2_2">
-                <h3>Вы уже подали <br>заявлениев суд?</h3>
-                <a href="" class="op">Заявление подано</a>
-                <a href="" class="op">Нет. Ищу юриста</a>
-            </div>
-            <div class="kalk_v" id="v_2_3">
-                <h3>Заполните Ваши контактные<br> данные и мы избавим Вас от<br> долгов!</h3>
-                <form action="">
-                    <input type="text" name="name" placeholder="Ваше имя">
-                    <input type="text" name="phone" placeholder="+7 (___) ___-__-__">
-                    <button type="submit" value="Отправить">Отправить</button>
-                </form>
-            </div>
--->
-        </div>
-    </div>
+   </div>
 </section>
-<section class="sec3">
+<section class="sec3" id="sec3">
     <div class="wrap">
         <h4>В качестве кого вы выступаете в<br> процедуре банкротства</h4>
         <div class="proc_gr">
-            <a href="" class="btn_proc active"><span>Должник</span></a>
-            <a href="" class="btn_proc"><span>Арбитражный<br> управляющий</span></a>
-            <a href="" class="btn_proc"><span>Кредитор</span></a>          
+            <a href="" class="btn_proc active" id="proc-1"><span>Должник</span></a>
+            <a href="" class="btn_proc" id="proc-2"><span>Арбитражный<br> управляющий</span></a>
+            <a href="" class="btn_proc" id="proc-3"><span>Кредитор</span></a>          
+        </div>
+        <div class="proc proc1">
+            <h2>Пришло время начать <br>все с чистого листа!</h2>
+            <div class="proc_t">
+                <h3>Мы освободим Вас:</h3>
+                <p>От субсидиарной <br>ответственности <br>имуществом</p>
+                <p>От долгов, в том<br> числе и от налогов</p>
+                <p>От уголовной <br>ответственности при<br> невыплате зарлат</p>
+            </div>
+            <div class="proc_m">
+                <h3>Проблемы, которых Вы <br>избежите, работая с нами</h3>
+                <p>Риск уголовной<br> ответственности за<br> невыплаты заработных<br> плат</p>
+                <p>Риск потерять все<br> нажитое имущество</p>
+                <p>Риск<br> несанкционированного<br> захвата имущества <br>с поддельными<br> документами</p>
+            </div>
+            <div class="proc_b">
+                <h3>Наша компания решает <br>задачи любой сложности</h3>
+                <p>Исключение из <br>Гос Реестра<br> предприятия <br>должника</p>
+                <p>Сохранение<br> целостности <br>предприятия</p>
+                <p>Подключение<br> силовых <br>ведомств</p>
+                <p>Назначение <br>подконтрольного <br>арбитражного<br>управляющего</p>             
+            </div>
         </div>
         <div class="proc proc2">
             <h2>Сохраните кристально чистую <br>репутацию перед заказчиком!</h2>
@@ -135,29 +154,7 @@
                     <br>банкротства</p>            
             </div>
         </div>
-        <!--div class="proc proc1">
-            <h2>Пришло время начать <br>все с чистого листа!</h2>
-            <div class="proc_t">
-                <h3>Мы освободим Вас:</h3>
-                <p>От субсидиарной <br>ответственности <br>имуществом</p>
-                <p>От долгов, в том<br> числе и от налогов</p>
-                <p>От уголовной <br>ответственности при<br> невыплате зарлат</p>
-            </div>
-            <div class="proc_m">
-                <h3>Проблемы, которых Вы <br>избежите, работая с нами</h3>
-                <p>Риск уголовной<br> ответственности за<br> невыплаты заработных<br> плат</p>
-                <p>Риск потерять все<br> нажитое имущество</p>
-                <p>Риск<br> несанкционированного<br> захвата имущества <br>с поддельными<br> документами</p>
-            </div>
-            <div class="proc_b">
-                <h3>Наша компания решает <br>задачи любой сложности</h3>
-                <p>Исключение из <br>Гос Реестра<br> предприятия <br>должника</p>
-                <p>Сохранение<br> целостности <br>предприятия</p>
-                <p>Подключение<br> силовых <br>ведомств</p>
-                <p>Назначение <br>подконтрольного <br>арбитражного<br>управляющего</p>             
-            </div>
-        </div-->
-        <!--<div class="proc proc3">
+        <div class="proc proc3">
             <h2>Пришло время восстановить <br> справедливость<br>и вернуть свои средства!</h2>
             <div class="proc_t">
                 <p>Взыскание <br>дебиторской <br>задолженности</p>
@@ -175,7 +172,7 @@
                 <p>Возможность назначения<br> подконтрольного<br> арбитражного<br> управляющего</p>
                 <span>Арбитражный управляющий<br> принимает управление<br> имуществом должника в свое<br> ведение на период процедуры<br> банкротства до момента<br> полного возврата<br> задолженности кредитору.</span>                
             </div>
-        </div>-->
+        </div>
     </div>
 </section>
 <section class="sec4">
@@ -188,7 +185,7 @@
         </form>
     </div>
 </section>
-<section class="sec5">
+<section class="sec5" id="sec5">
     <div class="wrap">
         <h2>Основные этапы <br>процедуры банкротсва</h2>
         <p class="etap1">Формирование "стратегии"<br><span>Подача заявления в суд</span></p>
@@ -205,7 +202,7 @@
         <p class="etap6">Мировое соглашение</p>
     </div>
 </section>
-<section class="sec6">
+<section class="sec6" id="sec6">
     <div class="wrap">
         <h2>Президент компании</h2>
         <div class="man"></div>
@@ -216,7 +213,7 @@
         </div>
     </div>
 </section>
-<section class="sec7">
+<section class="sec7" id="sec7">
     <div class="wrap">
         <h2><span>Юридическое агентство <br>
             </span>"Профессионал"<br> в цифрах</h2>
@@ -235,17 +232,17 @@
         </div>
     </div>
 </section>
-<section class="sec8">
+<section class="sec8" id="sec8">
     <div class="wrap">
         <h2>Контактная<br> информация</h2>
-        <div class="point">
+        <!--<div class="point">
             <h3>Наш офис находится по адресу</h3>
             <p>г. Москва, Варшавское шоссе 1c1</p>
-        </div>         
+        </div> -->        
     </div>
     <div class="vop_okno">
         <div class="fon_vop">
-            <a href="" class="btn_foot"></a>
+            <div class="btn_foot"></div>
             <a href="" class="btn_vop">Задать вопрос</a>
         </div>
         <div class="vop_form">
@@ -259,6 +256,7 @@
             <a href="tel:+74997098732" class="click_fone">+7 (499) 709-87-32</a>
         </div>
     </div>
+    <div id="map"></div>
 </section>
 <footer>
     <div class="wrap">
@@ -266,7 +264,58 @@
         <a href="" class="gulf_logo"></a>
     </div>
 </footer>
-<a href="" class="menu"></a> 
+<div class="menu_btn"></div>
+<div class="menu">
+    <div class="dabl">
+        <div class="fone">
+            <a href="tel:88000009944" class="tell">8 800 000 99 44</a>
+            <a href="" class="zz_btn" id="zz-btn">Заказать звонок</a>
+        </div>
+        <div class="close"></div>
+    </div>
+      <!--<a class="menu-scroll-a menu-a" href="#sec1" data-href="1">Главная</a>-->
+      <a class="menu-scroll-a menu-a click" href="#sec3" data-trig="#proc-1" data-part="1" data-href="3">Должник</a>
+      <a class="menu-scroll-a menu-a click" href="#sec3" data-trig="#proc-3" data-part="2" data-href="3">Кредитор</a>
+      <a class="menu-scroll-a menu-a click" href="#sec3" data-trig="#proc-2" data-part="3" data-href="3">Арбитражный управляющий</a>
+      <a class="menu-scroll-a menu-a" href="#sec5" data-href="5">Основные этапы банкротства</a>
+      <a class="menu-scroll-a menu-a" href="#sec6" data-href="6">Руководитель</a>
+      <a class="menu-scroll-a menu-a" href="#sec7" data-href="7">Профессионал в цифрах</a>
+      <a class="menu-scroll-a menu-a" href="#sec8" data-href="8">Контакты</a>
+      <div class="after_line"></div>
+</div>
+<div id="hidden-box">
+   <div class="popap" id="zz_pop">
+    <h2>Заказать обратный звонок<br><span>Оставьте Ваши данные, и наш <br>менеджер свяжется с Вами</span></h2>
+    <form action="ajax/mail.php" method="post">
+     <input type="text" placeholder="Ваше имя" name="name" class="inp_f">
+     <input type="text" placeholder="+7 (___) ___-__-__" name="phone" class="inp_f">
+     <input type="submit" value="Отправить" class="btn_p">
+     <input type="hidden" name="frmid" value="Обратный звонок">
+    </form>
+   </div>
+   <div class="popap" id="okgo">
+    <p>Спасибо за обращение!<br>Наш менеджер свяжется<br>с Вами в ближайшее время!</p>
+   </div>
+   <div class="popap" id="conf_pop">
+    <h2>Политика конфиденциальности</h2>
+<p>«Наша организация уважительно относится к правам клиента. Соблюдается строгая конфиденциальность при оформлении заказа. Сведения надёжно сохраняются и защищены от передачи.</p>
+
+<p>Согласием на обработку данных клиента исключительно с целью оказания услуг является размещение заказа на сайте.</p>
+
+<p>К персональным данным относится личная информация о клиенте: домашний адрес; имя, фамилия, отчество; сведения о рождении; имущественное, семейное положение; личные контакты (телефон, электронная почта) и прочие сведения, которые перечислены в Законе РФ № 152-ФЗ «О персональных данных» от 27 июля 2006 г.</p>
+
+<p>Клиент вправе отказаться от обработки персональных данных. Нами в данном случае гарантируется удаление с сайта всех персональных данных в трёхдневный срок в рабочее время. Подобный отказ клиент может оформить простым электронным письмом на адрес, указанный на странице нашего сайта.</p>
+
+   </div>
+ </div>
 <div id="maket"></div>
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/jquery.cookie.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/jquery.arcticmodal.min.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script src="js/map.js"></script>
 </body>
 </html>
