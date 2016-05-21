@@ -1,0 +1,19 @@
+*{margin:0;padding:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;background-position:center;background-repeat:no-repeat;vertical-align:top}
+:not(a):after,:not(a):before,:not(br):after,:not(br):before,:not(img):after,:not(img):before,:not(span):after,:not(span):before{content:" ";display:block;width:100%;height:0;clear:both}
+a:after,a:before,br:after,br:before,img:after,img:before,span:after,span:before,table:after,table:before,td:after,td:before,tr:after,tr:before{content:none}
+.wrap{position:relative;margin:0 auto;max-width:480px;width:100%;min-width:480px;z-index:2;text-align:center}
+.clear{clear:both}
+.section,section{width:100%;overflow:hidden;position:relative;z-index:1;min-width:480px}
+h1,h2,h3,h4,h5{font-size:1em;font-weight:inherit;text-align:center}
+body{font-weight:400;font-family:MuseoSansCyrl;color:#fff;-webkit-transition:all .25s;transition:all .25s;width:480px}
+a{text-decoration:none;color:inherit;outline:0!important}
+.menu_btn{background:url(../img/menu_foot.png) no-repeat center;width:41px;height:31px;z-index:10;position:fixed;top:30px;left:31px}
+header{background:url(../img/bg_sec1.jpg) no-repeat center;height:870px;padding-top:35px}
+.logo{background:url(../img/logo.png) no-repeat center;width:218px;height:121px;display:inline-block}
+h2{font-family:MuseoSansCyrl}
+h3{font-family:MuseoSansCyrl}
+.titl_t{font-size:32px;text-align:left;font-weight:700;margin-top:38px;line-height:50px;letter-spacing:1.1px;background:url(../img/titl1.png) no-repeat 30px center;width:100%;min-height:361px;padding-top:52px;padding-left:62px}
+.titl_t span{font-size:38px;font-weight:900;letter-spacing:1.5px;margin-top:6px}
+.titl_t span span{font-size:54px;letter-spacing:3px;display:inline-block;background:url(../img/titl2.png) no-repeat bottom left;padding-bottom:13px;width:169px;margin-left:-3px;padding-left:3px;margin-bottom:-5px;margin-top:-6px}
+.titl_b{font-size:37px;color:#f9a859;font-weight:700;background:url(../img/titl3.png) no-repeat top 19px center;width:100%;margin-top:53px;min-height:177px;text-align:left;padding-left:92px;letter-spacing:1.5px}
+.titl_b span{font-size:24px;font-family:"Noto Serif";color:#fff;font-style:italic;font-weight:400;margin-top:22px;display:inline-block;line-height:39px;letter-spacing:.5px;margin-left:2px}

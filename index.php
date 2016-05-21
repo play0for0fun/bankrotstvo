@@ -462,7 +462,7 @@
     <a href="" class="confbtn">Политика конфиденциальности</a><br>
     Все права защищены
    </div>
-   <p class="logo_gs">Разработка сайта: </p>
+   <a href="http://gulfstream.bz/" target="_blank" class="logo_gs">Разработка сайта: </a>
   </div>
  </footer>
  </section>

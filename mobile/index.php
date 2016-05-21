@@ -5,8 +5,17 @@
  <title>банкротствовсем.рф</title>
  <meta id="viewport" name="viewport" content="width=480">
  <link rel="shortcut icon" href="img/favicon-1.png" type="image/x-icon">
- <link href="css/full.min.css" rel="stylesheet" type='text/css'>
   <script type="text/javascript">if (screen.width > 699) {document.location = "../"+document.location.search;}</script>
+  <style><? include('css/head.css'); ?></style>
+<script>!function(e,t,n){function r(){for(;u[0]&&"loaded"==u[0][l];)o=u.shift(),o[f]=!a.parentNode.insertBefore(o,a)}for(var i,s,o,u=[],a=e.scripts[0],f="onreadystatechange",l="readyState";i=n.shift();)s=e.createElement(t),"async"in a?(s.async=!1,e.head.appendChild(s)):a[l]?(u.push(s),s[f]=r):e.write("<"+t+' src="'+i+'" defer></'+t+">"),s.src=i}(document,"script",
+    ["https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js",
+    "js/jquery.cookie.min.js",
+    "js/jquery.maskedinput.min.js",
+    "js/jquery.arcticmodal.min.js",
+    "js/main.js",
+    "https://maps.googleapis.com/maps/api/js?sensor=false",
+    "js/map.js"]);
+</script>
  </head>
 <body>
 <header>
@@ -261,7 +270,10 @@
 <footer>
     <div class="wrap">
         <p>© 2016 Юридическое агентство <br>Профессионал</p>
-        <a href="" class="gulf_logo"></a>
+        <a href="http://gulfstream.bz/" target="_blank" class="gulf_logo"></a>
+        <div class="foot_conf">
+            <a href="" class="confbtn">Политика конфиденциальности</a><br>Все права защищены
+        </div>
     </div>
 </footer>
 <div class="menu_btn"></div>
@@ -308,13 +320,5 @@
 
    </div>
  </div>
-
-<script src="js/jquery-2.1.4.min.js"></script>
-<script src="js/jquery.cookie.min.js"></script>
-<script src="js/jquery.maskedinput.min.js"></script>
-<script src="js/jquery.arcticmodal.min.js"></script>
-<script src="js/main.js"></script>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-<script src="js/map.js"></script>
 </body>
 </html>
