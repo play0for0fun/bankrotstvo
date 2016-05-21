@@ -1,6 +1,7 @@
 $(document).ready(function(){
-  $('<link rel="stylesheet" href="css/style.css"><link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700,700italic&subset=latin,cyrillic" rel="stylesheet" type="text/css">').appendTo('head');
-      
+  //$('<link rel="stylesheet" href="css/style.css"><link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700,700italic&subset=latin,cyrillic" rel="stylesheet" type="text/css">').appendTo('head');
+  //$('<link rel="stylesheet" href="css/full.min.css"><link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700,700italic&subset=latin,cyrillic" rel="stylesheet" type="text/css">').appendTo('head');
+     
   $('.btn_vop').click(function(e) {
     e.preventDefault();
     $('.vop_okno').toggleClass('open');

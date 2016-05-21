@@ -1,7 +1,7 @@
-cd ../../Volumes/Workspace/CACHE/GITHUB/bankrotstvo
+cd ../../Volumes/Workspace/CACHE/GITHUB/shtory
 
 
-cd /d D:\WORKSPACE\GITHUB\bankrotstvo
+cd /d D:\WORKSPACE\GITHUB\kamin
 
 sudo npm install grunt --save-dev
 
@@ -46,9 +46,9 @@ grunt ftpush -d
 
 grunt
 
-cd ../../Volumes/Workspace/CACHE/GITHUB/bankrotstvo
+cd ../../Volumes/Workspace/CACHE/GITHUB/kamin
 grunt 'ftp-deploy' -d
 grunt ftpush -d
 
-cd ../../Volumes/Workspace/CACHE/GITHUB/bankrotstvo
+cd ../../Volumes/Workspace/CACHE/GITHUB/kamin
 grunt
