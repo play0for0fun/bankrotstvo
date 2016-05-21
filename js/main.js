@@ -466,8 +466,8 @@ $(window).scroll(function() {
             if(b_srolltop >= $('.sec3').offset().top && b_srolltop<= $('.se3_f_n').offset().top){$('.site-nav.down').addClass('black');}else{$('.site-nav.down').removeClass('black');}
             
             if(b_srolltop >= $('.sec6').offset().top && b_srolltop< $('.sec7').offset().top){$('.site-nav.up,.site-nav.down').addClass('black');}else{$('.site-nav.down,.site-nav.up').removeClass('black');} 
-            if(b_srolltop < $('.sec2').offset().top){$('.site-nav.down').addClass('animation4');}else{$('.site-nav.down').removeClass('animation4');}
-            if(b_srolltop < $('.sec2').offset().top){$('.site-nav.down').addClass('animated');}else{$('.site-nav.down').removeClass('animated');}
+            //if(b_srolltop < $('.sec2').offset().top){$('.site-nav.down').addClass('animation4');}else{$('.site-nav.down').removeClass('animation4');}
+            //if(b_srolltop < $('.sec2').offset().top){$('.site-nav.down').addClass('animated');}else{$('.site-nav.down').removeClass('animated');}
 
             //if (nextIndex == 2 && direction == "up") {$('.stat').not('.stat-abs').removeClass('fix-stat');}
             //if (nextIndex == 5 && direction == "down") {$('.stat').not('.stat-abs').removeClass('fix-stat');$('.stat-abs').addClass('stat-show');}
