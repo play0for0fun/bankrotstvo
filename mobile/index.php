@@ -37,21 +37,25 @@
         <div class="kalk_gr1 kalk_gr">
             <p class="kalk"><span>Должник</span><a href="" class="back"></a></p>
             <div class="kalk_v" id="v_1_1">
-                <h3>Сколько Вам должны?</h3>
-                <a href="" class="v_1_1">От 300 тыс <br>до 1 млн. руб.</a>
-                <a href="" class="v_1_1">От 300 тыс <br>до 1 млн. руб.</a>
-                <a href="" class="v_1_1">От 300 тыс <br>до 1 млн. руб.</a>
+                <h3>Сколько Вы должны?</h3>
+                <a href="" class="v_1_1" data-value="Меньше 1 млн. руб.">Меньше <br> 1 млн. руб.</a>
+                <a href="" class="v_1_1" data-value="Больше 1 млн. руб.">Больше <br> 1 млн. руб.</a>
+                <a href="" class="v_1_1" data-value="Конфиденциальная информация">Конфиденциальная <br>информация</a>
             </div>
             <div class="kalk_v" id="v_1_2">
                 <h3>Вы уже подали <br>заявлениев суд?</h3>
-                <a href="" class="v_1_2 op">Заявление подано</a>
-                <a href="" class="v_1_2 op">Нет. Ищу юриста</a>
+                <a href="" class="v_1_2 op" data-value="Заявление подано">Заявление подано</a>
+                <a href="" class="v_1_2 op" data-value="Нет. Ищу юриста">Нет. Ищу юриста</a>
             </div>
             <div class="kalk_v" id="v_1_3">
                 <h3>Заполните Ваши контактные<br> данные и мы избавим Вас от<br> долгов!</h3>
                 <form action="ajax/mail.php">
                     <input type="text" name="name" placeholder="Ваше имя">
                     <input type="text" name="phone" placeholder="+7 (___) ___-__-__">
+                    <input type="hidden" name="frmid" value="ПОМОЧЬ">
+                    <input type="hidden" name="form" value="" id="step1_0">
+                    <input type="hidden" name="dolh" value="" id="step1_1">
+                    <input type="hidden" name="syd" value="" id="step1_2">
                     <button type="submit" value="Отправить">Отправить</button>
                 </form>
             </div>
@@ -60,20 +64,24 @@
             <p class="kalk"><span>Кредитор</span><a href="" class="back"></a></p>
             <div class="kalk_v" id="v_2_1">
                 <h3>Сколько Вам должны?</h3>
-                <a href="" class="v_2_1">От 300 тыс <br>до 1 млн. руб</a>
-                <a href="" class="v_2_1">От 1 до <br>5 млн. руб.</a>
-                <a href="" class="op v_2_1">От 5 млн. руб</a>
+                <a href="" class="v_2_1" data-value="Меньше 1 млн. руб.">Меньше <br> 1 млн. руб.</a>
+                <a href="" class="v_2_1" data-value="Больше 1 млн. руб.">Больше <br> 1 млн. руб.</a>
+                <a href="" class="v_2_1" data-value="Конфиденциальная информация">Конфиденциальная <br>информация</a>
             </div>
             <div class="kalk_v" id="v_2_2">
                 <h3>Вы уже подали <br>заявлениев суд?</h3>
-                <a href="" class="op v_2_2">Заявление подано</a>
-                <a href="" class="op v_2_2">Нет. Ищу юриста</a>
+                <a href="" class="op v_2_2" data-value="Заявление подано">Заявление подано</a>
+                <a href="" class="op v_2_2" data-value="Нет. Ищу юриста">Нет. Ищу юриста</a>
             </div>
             <div class="kalk_v" id="v_2_3">
                 <h3>Заполните Ваши контактные<br> данные и мы избавим Вас от<br> долгов!</h3>
                 <form action="ajax/mail.php">
                     <input type="text" name="name" placeholder="Ваше имя">
                     <input type="text" name="phone" placeholder="+7 (___) ___-__-__">
+                    <input type="hidden" name="frmid" value="ПОМОЧЬ">
+                    <input type="hidden" name="form" value="" id="step2_0">
+                    <input type="hidden" name="dolh" value="" id="step2_1">
+                    <input type="hidden" name="syd" value="" id="step2_2">
                     <button type="submit" value="Отправить">Отправить</button>
                 </form>
             </div>
@@ -82,21 +90,25 @@
             <p class="kalk"><span>Арбитражный <br>управляющий</span><a href="" class="back"></a></p>
             <div class="kalk_v" id="v_3_1">
                 <h3>Вас уже назначили?</h3>
-                <a href="" class="v_3_1">Да. Процедура<br> введена</a>
-                <a href="" class="v_3_1">Нет. Назначение<br>планируется</a>
+                <a href="" class="v_3_1" data-value="Да. Процедура введена">Да. Процедура<br> введена</a>
+                <a href="" class="v_3_1" data-value="Нет. Назначение планируется">Нет. Назначение<br>планируется</a>
             </div>     
             <div class="kalk_v" id="v_3_2">
                 <h3>По какой причине Вам<br> необходима <br>экспертная помощь коллег?</h3>
-                <a href="" class="v_3_2">Завал дел</a>
-                <a href="" class="v_3_2">Сроки горят</a>
-                <a href="" class="op">Сложный<br>заказчик</a>
-                <a href="" class="v_3_2">Иное</a>
+                <a href="" class="v_3_2" data-value="Завал дел">Завал дел</a>
+                <a href="" class="v_3_2" data-value="Сроки горят">Сроки горят</a>
+                <a href="" class="v_3_2 op" data-value="Сложный заказчик">Сложный<br>заказчик</a>
+                <a href="" class="v_3_2" data-value="Иное">Иное</a>
             </div>
             <div class="kalk_v" id="v_3_3">
                 <h3>Заполните Ваши контактные<br> данные и мы поможем Вам<br> сохранить кристально чистую<br> репутацию перед заказчиком</h3>
                 <form action="ajax/mail.php">
                     <input type="text" name="name" placeholder="Ваше имя">
                     <input type="text" name="phone" placeholder="+7 (___) ___-__-__">
+                    <input type="hidden" name="frmid" value="ПОМОЧЬ">
+                    <input type="hidden" name="form" value="" id="step3_0">
+                    <input type="hidden" name="dolh" value="" id="step3_1">
+                    <input type="hidden" name="syd" value="" id="step3_2">
                     <button type="submit" value="Отправить">Отправить</button>
                 </form>
             </div>
@@ -260,6 +272,7 @@
                 <input type="text" name="name" placeholder="Ваше имя">
                 <input type="text" name="phone" placeholder="+7 (___) ___-__-__">
                 <textarea name="mess" placeholder="Вопрос"></textarea>
+                <input type="hidden" name="frmid" value="Контактная информация">
                 <button type="submit" value="Отправить">Отправить</button>
             </form>
             <a href="tel:+74997098732" class="click_fone">+7 (499) 709-87-32</a>

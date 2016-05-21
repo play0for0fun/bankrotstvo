@@ -160,7 +160,7 @@
      </div>
      <div class="steps-wrap">
       <div class="proc_r s-visible" id="a_ok1" >
-       <h3>Вас уже назначили <br>назначили?</h3>
+       <h3>Вас уже <br>назначили?</h3>
        <a href="" class="btn_k ok2 ook go_c3_s2 d_v5" data-value="Да. Процедура введена">Да. Процедура <br>введена</a>
        <a href="" class="btn_k ok2 ook go_c3_s2 d_v5" data-value="Нет. Назначение планируется">Нет. Назначение <br>планируется</a>
       </div>
