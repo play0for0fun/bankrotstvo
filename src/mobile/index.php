@@ -16,6 +16,7 @@
     "https://maps.googleapis.com/maps/api/js?sensor=false",
     "js/map.js"]);
 </script>
+<noindex><script async src="data:text/javascript;charset=utf-8;base64,ZnVuY3Rpb24gbG9hZHNjcmlwdChlLHQpe3ZhciBuPWRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoInNjcmlwdCIpO24uc3JjPSIvL2xwdHJhY2tlci5ydS9hcGkvIitlO24ub25yZWFkeXN0YXRlY2hhbmdlPXQ7bi5vbmxvYWQ9dDtkb2N1bWVudC5oZWFkLmFwcGVuZENoaWxkKG4pO3JldHVybiAxfXZhciBpbml0X2xzdGF0cz1mdW5jdGlvbigpe2xzdGF0cy5zaXRlX2lkPTE3ODk5O2xzdGF0cy5yZWZlcmVyKCl9O3ZhciBqcXVlcnlfbHN0YXRzPWZ1bmN0aW9uKCl7alFzdGF0Lm5vQ29uZmxpY3QoKTtsb2Fkc2NyaXB0KCJzdGF0cy5qcyIsaW5pdF9sc3RhdHMpfTtsb2Fkc2NyaXB0KCJqcXVlcnktMS4xMC4yLm1pbi5qcyIsanF1ZXJ5X2xzdGF0cyk="></script></noindex>
  </head>
 <body>
 <header>
@@ -119,9 +120,9 @@
     <div class="wrap">
         <h4>В качестве кого вы выступаете в<br> процедуре банкротства</h4>
         <div class="proc_gr">
-            <a href="" class="btn_proc active" id="proc-1"><span>Должник</span></a>
-            <a href="" class="btn_proc" id="proc-2"><span>Арбитражный<br> управляющий</span></a>
-            <a href="" class="btn_proc" id="proc-3"><span>Кредитор</span></a>          
+            <a href="" class="btn_proc active mst" data-value="Должник" id="proc-1"><span>Должник</span></a>
+            <a href="" class="btn_proc mst" data-value="Арбитражный управляющий" id="proc-2"><span>Арбитражный<br> управляющий</span></a>
+            <a href="" class="btn_proc mst" data-value="Кредитор" id="proc-3"><span>Кредитор</span></a>          
         </div>
         <div class="proc proc1">
             <h2>Пришло время начать <br>все с чистого листа!</h2>
@@ -202,6 +203,8 @@
         <form action="ajax/mail.php" method="post">
             <input type="text" name="name" placeholder="Ваше имя">
             <input type="text" name="phone" placeholder="+7 (___) ___-__-__">
+            <input type="hidden" name="frmid" value="Блок-предложение:">
+      <input type="hidden" name="form" value="" id="step4_1">
             <button type="submit" value="Отправить">Отправить</button>
         </form>
     </div>
@@ -333,5 +336,11 @@
 
    </div>
  </div>
+ <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-75942628-1', 'auto');ga('send', 'pageview');</script>
+<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter36555965 = new Ya.Metrika({ id:36555965, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/36555965" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+<!-- BEGIN K50 TRACKER CODE-->
+<script src="http://cdn.k50.ru/k50/k50tracker2.js"></script>
+<script>k50Tracker.init({siteId: 5012544275288});</script>
+<!-- END K50 TRACKER CODE-->
 </body>
 </html>

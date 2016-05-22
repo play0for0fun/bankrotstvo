@@ -100,6 +100,47 @@ $('.confbtn').click(function(e) {
   });
 
 
+  $('.pf1').click(function(){
+      $("#step1_0").val($(this).data('value'));
+    });
+  $('.pf1').click(function(){
+      $("#step2_0").val($(this).data('value'));
+    });
+
+  $('.pf1').click(function(){
+      $("#step3_0").val($(this).data('value'));
+    });
+
+
+$('.v_1_1').click(function(){
+      $("#step1_1").val('Сколько Вы должны? : '+$(this).data('value'));
+    });
+
+$('.v_1_2').click(function() {
+       $('#step1_2').val('Вы уже подали заявление в суд? : '+$(this).data('value'));
+    });
+
+$('.v_2_1').click(function(){
+      $("#step2_1").val('Сколько Вам должны? : '+$(this).data('value'));
+    });
+
+$('.v_2_2').click(function() {
+       $('#step2_2').val('Вы уже подали заявление в суд? : '+$(this).data('value'));
+    });
+
+$('.v_3_1').click(function(){
+      $("#step3_1").val('Вас уже назначили назначили? : '+$(this).data('value'));
+    });
+
+$('.v_3_2').click(function() {
+       $('#step3_2').val('По какой причине Вам необходима экспертная помощь коллег? : '+$(this).data('value'));
+    });
+
+
+$('.mst').click(function() {
+       $('#step4_1').val($(this).data('value'));
+    });
+
 
 //menu
 var menu_active = 0;
